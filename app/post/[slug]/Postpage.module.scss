@@ -44,13 +44,24 @@
       }
       .author {
         display: flex;
+        width: 30%;
+        justify-content: space-between;
+        align-items: center;
+
+        .bio {
+          width: 90%;
+        }
         p {
-          font-weight: 700;
+          // font-weight: 00;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
         }
         .img {
           position: relative;
-          width: 35px;
-          height: 35px;
+          width: 40px;
+          height: 40px;
           border-radius: 50%;
           overflow: hidden;
           margin-right: 3px;
@@ -85,6 +96,10 @@
         }
         .author {
           margin-top: 25px;
+          width: 100%;
+          .bio {
+            width: 90%;
+          }
         }
         .desc {
           margin-top: 30px;
