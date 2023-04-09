@@ -1,38 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Click [Here](https://thedeveloperblog.vercel.app/) to visit the site.
 
-## Getting Started
+## The Developer Blog
 
-First, run the development server:
+the developer blog is a platform dedicated to sharing your knowledge, experience, and insights on programming and technology-related topics. It aims to provide valuable information and resources to fellow developers, beginners, and enthusiasts alike. we covers a wide range of topics such as programming languages, web development, software engineering, algorithms, data structures, best practices, and industry news. It also features tutorials, code snippets, and practical examples that help readers understand complex concepts and apply them in real-world scenarios. Your blog's style is approachable, informative, and engaging, making it easy for readers to follow and learn. Whether you are a seasoned programmer or a beginner, it offers something for everyone who is interested in the world of programming and technology
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Technologies
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Frontend
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Next js 13
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Backend
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Sanity V3
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Styling
 
-## Learn More
+Scss
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+</ul>
