@@ -14,6 +14,10 @@
       }
     }
   }
+  .ads {
+    width: 100%;
+    height: 300px;
+  }
   .header {
     width: 90%;
     height: 300px;
@@ -36,6 +40,9 @@
       }
       .date {
         // width: 50%;
+        p {
+          color: #bbbbbb;
+        }
         h4 {
           font-size: 2.5rem;
           width: 70%;
@@ -57,10 +64,13 @@
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           overflow: hidden;
+          color: #bbb;
         }
         .img {
           position: relative;
           width: 40px;
+          background-color: #1e65ff;
+          border-radius: 50%;
           height: 40px;
           border-radius: 50%;
           overflow: hidden;

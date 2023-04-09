@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 import { groq } from "next-sanity";
 import { client } from "@/lib/sanity.client";
 import styles from "./Postpage.module.scss";
@@ -37,46 +38,57 @@ const Post = async ({ params: { slug } }) => {
   const post = await client.fetch(query, { slug });
 
   return (
-    <div className={styles.container}>
-      <div className={styles.header}>
-        <Image
-          src={urlFor(post.mainImage).url()}
-          fill
-          className={styles.bgimg}
-          alt="image"
-        />
-        <div className={styles.topleft}>
-          <div className={styles.date}>
-            <Link href="/" className={styles.back}>
-              <ArrowLeftIcon />
-            </Link>
-            <h4>{post.title}</h4>
-            <p>
-              {new Date(post._createdAt).toLocaleDateString("en-US", {
-                day: "numeric",
-                month: "long",
-                year: "numeric",
-              })}
-            </p>
+    <>
+      <Script
+        id="Adsense-id"
+        data-ad-client="ca-pub-8299193659017860"
+        async="true"
+        strategy="beforeInteractive"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      />
+
+      <div className={styles.container}>
+        <div className={styles.header}>
+          <Image
+            src={urlFor(post.mainImage).url()}
+            fill
+            className={styles.bgimg}
+            alt="image"
+          />
+          <div className={styles.topleft}>
+            <div className={styles.date}>
+              <Link href="/" className={styles.back}>
+                <ArrowLeftIcon />
+              </Link>
+              <h4>{post.title}</h4>
+              <p>
+                {new Date(post._createdAt).toLocaleDateString("en-US", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })}
+              </p>
+            </div>
+            <div className={styles.author}>
+              <div className={styles.img}>
+                <Image src={urlFor(post.author.image).url()} fill alt="image" />
+              </div>
+              <div className={styles.bio}>
+                <h4>{post.author.name}</h4>
+                <PortableText value={post.author.bio} />
+              </div>
+            </div>
           </div>
-          <div className={styles.author}>
-            <div className={styles.img}>
-              <Image src={urlFor(post.author.image).url()} fill alt="image" />
-            </div>
-            <div className={styles.bio}>
-              <p>{post.author.name}</p>
-              <PortableText value={post.author.bio} />
-            </div>
+          <div className={styles.desc}>
+            <p>{post.description}</p>
           </div>
         </div>
-        <div className={styles.desc}>
-          <p>{post.description}</p>
-        </div>
+        <article>
+          <PortableText value={post.body} components={RichText} />
+        </article>
+        <div className={styles.ads}></div>
       </div>
-      <article>
-        <PortableText value={post.body} components={RichText} />
-      </article>
-    </div>
+    </>
   );
 };
 
