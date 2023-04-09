@@ -1,0 +1,16 @@
+.logocontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .img {
+    background-color: #59ff;
+    border-radius: 50%;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  span {
+    font-size: 20px;
+  }
+}

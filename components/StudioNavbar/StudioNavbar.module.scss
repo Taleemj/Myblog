@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 15px;
+
+  .backlink {
+    display: flex;
+    color: #59ff;
+    align-items: center;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 700;
+
+    .backicon {
+      width: 20px;
+      margin: 0 3px;
+      font-weight: 700;
+    }
+  }
+}
