@@ -15,7 +15,7 @@ const Header = () => {
         <div className={styles.contact}>
           <Link href="https://taleem-mankuer.web.app" target="_blank">
             <h4>
-              View contact info <ArrowLongRightIcon />
+              Get In Touch <ArrowLongRightIcon />
             </h4>
           </Link>
         </div>
