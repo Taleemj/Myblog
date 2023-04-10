@@ -24,7 +24,7 @@ const head = () => {
       <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8299193659017860"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
       ></script>
     </>
   );
