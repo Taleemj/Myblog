@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import Script from "next/script";
 import { groq } from "next-sanity";
 import { client } from "@/lib/sanity.client";
 import styles from "./Postpage.module.scss";
@@ -11,21 +10,21 @@ import { RichText } from "@/components/Richtext/RichText";
 
 export const revalidate = 30;
 
-// export async function generateStaticParams() {
-//   const query = groq`
-//         *[_type == "post"]
-//     {
-//         slug
-//     }
-//     `;
-//   const slugs = await client.fetch(query);
+export async function generateStaticParams() {
+  const query = groq`
+        *[_type == "post"]
+    {
+        slug
+    }
+    `;
+  const slugs = await client.fetch(query);
 
-//   const slugRoutes = slugs.map((slug) => slug.slug.current);
+  const slugRoutes = slugs.map((slug) => slug.slug.current);
 
-//   return slugRoutes.map((slug) => ({
-//     slug,
-//   }));
-// }
+  return slugRoutes.map((slug) => ({
+    slug,
+  }));
+}
 
 const Post = async ({ params: { slug } }) => {
   const query = groq`
@@ -39,14 +38,6 @@ const Post = async ({ params: { slug } }) => {
 
   return (
     <>
-      <Script
-        id="Adsense-id"
-        data-ad-client="ca-pub-8299193659017860"
-        async="true"
-        strategy="beforeInteractive"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-      />
-
       <div className={styles.container}>
         <div className={styles.header}>
           <Image
