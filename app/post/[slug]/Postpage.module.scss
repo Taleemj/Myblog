@@ -1,12 +1,54 @@
 .container {
+  .relatedposts {
+    width: 80%;
+    margin: 20px auto;
+    .postscontainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  .share {
+    margin: 40px auto;
+    text-align: center;
+    width: 85%;
+    p {
+      text-align: center;
+      .sharecontainer {
+        margin: 45px auto;
+        font-weight: 700;
+        font-size: 18px;
+        display: flex;
+        width: 65%;
+        .copy {
+          color: #5151ff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          :hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+          svg {
+            width: 20px;
+          }
+        }
+      }
+    }
+    hr {
+      margin: 0 auto;
+    }
+  }
   article {
-    width: 75%;
+    width: 70%;
     margin: 50px auto;
     p {
       margin: 20px 0;
+      font-size: 19px;
+      line-height: 1.8;
       a {
-        text-decoration: underline;
-        text-decoration-color: #00ffff;
+        color: #5151ff;
         font-weight: 700;
         :hover {
           text-decoration-color: #000;
@@ -14,105 +56,169 @@
       }
     }
   }
-  .ads {
-    width: 100%;
-    height: 300px;
-  }
-  .header {
-    width: 90%;
-    height: 300px;
-    padding: 10px 40px;
-    margin: 5px auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-    .bgimg {
-      z-index: -1;
+  .routes {
+    display: flex;
+    width: 70%;
+    margin: 30px auto 0;
+    font-size: 14px;
+    a {
+      color: #999;
     }
-    color: #fff;
-    position: relative;
-    .topleft {
+    p {
+      margin: 0 3px;
+    }
+  }
+  .nav {
+    background-color: #fff;
+    z-index: 100;
+    color: #000;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    .navcontainer {
+      width: 80%;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      .back {
-        svg {
-          width: 30px;
+      margin: 0 auto;
+
+      .logocontainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 19px;
+      }
+      .contact {
+        font-family: sans-serif;
+        h4 {
+          display: flex;
+          align-items: center;
+          svg {
+            width: 25px;
+            margin: 0 4px;
+          }
+        }
+        &:hover {
+          text-decoration: underline;
         }
       }
+    }
+  }
+  .header {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(25, 25, 35, 0.7);
+    .heroimg {
+      img {
+        z-index: -1;
+      }
+    }
+    .herotext {
+      width: 70%;
+      padding-top: 200px;
+      color: #fff;
+      margin: 0 auto;
+      h1 {
+        font-size: 3.8rem;
+        margin-bottom: 30px;
+      }
       .date {
-        // width: 50%;
-        p {
-          color: #bbbbbb;
-        }
-        h4 {
-          font-size: 2.5rem;
-          width: 70%;
-          margin-bottom: 15px;
-        }
+        margin: 20px 0;
       }
       .author {
         display: flex;
-        width: 30%;
-        justify-content: space-between;
         align-items: center;
-
-        .bio {
-          width: 90%;
-        }
-        p {
-          // font-weight: 00;
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          color: #bbb;
-        }
         .img {
           position: relative;
           width: 40px;
-          background-color: #1e65ff;
           border-radius: 50%;
           height: 40px;
           border-radius: 50%;
           overflow: hidden;
-          margin-right: 3px;
+          margin-right: 10px;
+        }
+        .bio {
+          p {
+            color: #999;
+            margin-top: 2px;
+          }
         }
       }
-    }
-    .desc {
-      margin-top: 35px;
     }
   }
 }
 
 @media (max-width: 600px) {
   .container {
+    .relatedposts {
+      width: 95%;
+      .postscontainer {
+        flex-direction: column;
+      }
+    }
+    .share {
+      width: 100%;
+      p {
+        .sharecontainer {
+          display: block;
+          width: 100%;
+          .copy {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
     article {
       width: 95%;
     }
     .header {
-      width: 100%;
-      padding: 10px;
-      height: 400px;
-      margin: 0;
-      .topleft {
-        flex-direction: column;
-        align-items: flex-start;
-        .date {
+      height: 40vh;
+      .herotext {
+        width: 95%;
+        padding-top: 120px;
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    .routes {
+      width: 98%;
+      margin: 30px auto 0;
+    }
+    .nav {
+      .navcontainer {
+        h1 {
+          font-size: 1.2rem;
+        }
+        .contact {
+          font-family: sans-serif;
           h4 {
-            font-size: 1.7rem;
-            width: 100%;
-            margin-bottom: 10px;
+            svg {
+              width: 20px;
+              margin: 0;
+            }
           }
         }
-        .author {
-          margin-top: 25px;
-          width: 100%;
-          .bio {
-            width: 90%;
-          }
+      }
+    }
+    .header {
+      .herotext {
+        padding-top: 100px;
+        h1 {
+          font-size: 1.3rem;
+          margin-bottom: 10px;
         }
-        .desc {
-          margin-top: 30px;
+        .date {
+          margin-top: 10px;
         }
       }
     }

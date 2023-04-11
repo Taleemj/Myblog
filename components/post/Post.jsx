@@ -21,11 +21,7 @@ const Post = ({ post }) => {
         </div>
         <div className={styles.author}>
           <div className={styles.authordetails}>
-            {/* <div className={styles.authorimg}>
-              <Image fill src={urlFor(post.author.image).url()} />
-            </div> */}
             <div className={styles.date}>
-              {/* <p>{post.author.name}</p> */}
               <p>
                 {new Date(post._createdAt).toLocaleDateString("en-US", {
                   day: "numeric",
