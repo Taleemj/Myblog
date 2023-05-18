@@ -1,0 +1,7 @@
+import styles from "./Newsletter.module.scss";
+
+const Newsletter = () => {
+  return <div>Newsletter</div>;
+};
+
+export default Newsletter;

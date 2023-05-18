@@ -6,6 +6,8 @@ import PreviewSuspense from "../components/PreviewSuspense";
 import PreviewBlogList from "../components/PreviewBlogList/PreviewBlogList";
 import BlogList from "../components/BlogList/BlogList";
 import Hero from "../components/Hero/Hero";
+import Featured from "../components/Featured/Featured";
+import Newsletter from "../components/Newsletter/Newsletter";
 
 const query = groq`
 *[_type =="post"]{
@@ -36,6 +38,8 @@ const page = async () => {
   return (
     <div className="container">
       <Hero />
+      <Featured post={posts[0]} />
+      <Newsletter />
     </div>
   );
 };
