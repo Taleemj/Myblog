@@ -1,5 +1,5 @@
 import { groq } from "next-sanity";
-import { client } from "@/lib/sanity.client";
+import { client } from "../../../lib/sanity.client";
 
 const head = async ({ params: { slug } }) => {
   const query = groq`
@@ -21,6 +21,18 @@ const head = async ({ params: { slug } }) => {
         content="O_grUoAkNqBhd8JaaX1YpzQO4ti2Njc6w_Oul2kjNRQ"
       />
       <meta name="keyword" content={`${post.title}`} />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
       <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8299193659017860"

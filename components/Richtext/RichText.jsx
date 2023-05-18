@@ -1,5 +1,5 @@
 import Link from "next/link";
-import urlFor from "@/lib/urlFor";
+import urlFor from "../../lib/urlFor";
 import Image from "next/image";
 import styles from "./RichText.module.scss";
 

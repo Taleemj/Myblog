@@ -1,5 +1,5 @@
 import Image from "next/image";
-import urlFor from "@/lib/urlFor";
+import urlFor from "../../lib/urlFor";
 import styles from "./RelatedPosts.module.scss";
 import Link from "next/link";
 
