@@ -3,7 +3,7 @@ import { BsArrowUp } from "react-icons/bs";
 
 const Contact = () => {
   return (
-    <div className={styles.container}>
+    <div id="contact" className={styles.container}>
       <BsArrowUp />
       <h1>Let me know what you think, drop me a message </h1>
       <form action="">

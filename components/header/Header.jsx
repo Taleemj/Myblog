@@ -22,13 +22,21 @@ const Header = () => {
             <Link href={``}>About</Link>
           </li>
           <li>
-            <Link href={``}>Contact</Link>
+            <a href={"#contact"}>Contact</a>
           </li>
           <li>
-            <Link href={``}>
+            <Link
+              href={`https://www.linkedin.com/in/taleem-mankuer-713367235/`}
+              target="_blank"
+              rel="norefferal"
+            >
               <AiOutlineLinkedin />
             </Link>
-            <Link href={``}>
+            <Link
+              target="_blank"
+              rel="norefferal"
+              href={`https://github.com/Taleemj`}
+            >
               <AiFillGithub />
             </Link>
           </li>

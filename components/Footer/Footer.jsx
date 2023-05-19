@@ -26,11 +26,19 @@ const Footer = () => {
           <Link href={``}>Contact</Link>
         </li>
         <div className={styles.socials}>
-          <Link href={``}>
-            <AiFillGithub />
-          </Link>
-          <Link href={``}>
+          <Link
+            href={`https://www.linkedin.com/in/taleem-mankuer-713367235/`}
+            target="_blank"
+            rel="norefferal"
+          >
             <AiOutlineLinkedin />
+          </Link>
+          <Link
+            target="_blank"
+            rel="norefferal"
+            href={`https://github.com/Taleemj`}
+          >
+            <AiFillGithub />
           </Link>
         </div>
       </ul>
