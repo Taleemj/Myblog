@@ -29,11 +29,7 @@ const Main = ({ posts }) => {
                       })}
                     </p>
                     <h1>{post.title}</h1>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Corrupti, consequatur labore molestias explicabo quasi
-                      nostrum?
-                    </p>
+                    <p>{post.description}</p>
                   </div>
                 </Link>
               </div>
