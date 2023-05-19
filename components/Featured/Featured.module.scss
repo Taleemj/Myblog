@@ -18,7 +18,7 @@
       width: 45%;
       top: -30px;
       border: 1px solid #000;
-      padding: 20px 0;
+      padding: 15px 0;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -26,9 +26,10 @@
       background-color: #fff;
       z-index: 10;
       h1 {
-        font-size: 1.8rem;
-        font-weight: 100;
-        letter-spacing: 0.2rem;
+        font-size: 1.6rem;
+        font-weight: lighter;
+        opacity: 0.8;
+        letter-spacing: 0.4rem;
       }
     }
     img {
@@ -61,10 +62,18 @@
       width: 100%;
       .featuredFlag {
         width: 80%;
-        .desc {
-          h1 {
-            font-size: 1.6rem;
-          }
+        h1 {
+          font-size: 1.3rem;
+          letter-spacing: 0.3rem;
+        }
+      }
+      img {
+        height: 250px;
+      }
+      .desc {
+        padding: 30px 10px;
+        h1 {
+          font-size: 1.6rem;
         }
       }
     }

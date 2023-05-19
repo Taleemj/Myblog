@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  padding: 0 40px 10px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 40px;
+  .blogs,
+  .aboutme {
+    padding: 50px 0;
+    padding-left: 80px;
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 100;
+      opacity: 0.7;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+    }
+  }
+  .blogs {
+    width: 65%;
+    border-right: 1px solid #000;
+    padding: 50px 80px;
+    button {
+      width: 200px;
+      height: 50px;
+      background-color: #000;
+      outline: none;
+      border: 2px solid #000;
+      color: #fff;
+      &:hover {
+        transition: all 0.3s;
+        cursor: pointer;
+        background-color: #fff;
+        color: #000;
+      }
+    }
+    .blog {
+      display: flex;
+      border: 1px solid #000;
+      height: 280px;
+      margin-bottom: 60px;
+      img {
+        height: 100%;
+        width: 40%;
+      }
+      .text {
+        padding: 20px 30px;
+        h1 {
+          margin: 20px 0;
+          font-size: 1.5rem;
+          opacity: 1;
+          text-transform: capitalize;
+        }
+        p {
+          font-size: 16px;
+          opacity: 0.9;
+          line-height: 1.7;
+        }
+        &:hover {
+          color: blue;
+        }
+      }
+    }
+  }
+  .aboutme {
+    width: 30%;
+    img {
+      width: 300px;
+      height: 230px;
+      margin-bottom: 40px;
+      border: 1px solid #000;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 100;
+      line-height: 1.7;
+      opacity: 0.9;
+    }
+    h4 {
+      font-size: 17px;
+      margin-top: 10px;
+      font-weight: 200;
+      opacity: 0.9;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding: 0;
+    .aboutme {
+      width: 100%;
+      padding: 100px 10px;
+      border-top: 1px solid #000;
+      img {
+        width: 100%;
+      }
+    }
+    .blogs {
+      width: 100%;
+      padding: 20px 10px 100px;
+      border: none;
+      .blog {
+        flex-direction: column;
+        height: auto;
+        .text {
+          padding: 25px 10px;
+        }
+        img {
+          width: 100%;
+          height: 250px;
+        }
+      }
+    }
+  }
+}
