@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </ul>
       <div className={styles.newsletter}>
-        <h4>Don't miss a post</h4>
+        <h4>Don&apos;t miss a post</h4>
         <p>Enter your email here*</p>
         <input
           type="email"
