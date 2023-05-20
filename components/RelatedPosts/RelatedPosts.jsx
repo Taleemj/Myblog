@@ -6,10 +6,12 @@ import Link from "next/link";
 const RelatedPosts = ({ post }) => {
   return (
     <Link href={`post/${post.slug.current}`} className={styles.container}>
-      <Image src={urlFor(post.mainImage).url()} fill alt={post.title} />
-      <div className={styles.black}>
-        <p>Read More</p>
-      </div>
+      <Image
+        src={urlFor(post.mainImage).url()}
+        width={1000}
+        height={250}
+        alt={post.title}
+      />
       <h1>{post.title}</h1>
     </Link>
   );

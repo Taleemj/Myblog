@@ -36,11 +36,12 @@
     .blog {
       display: flex;
       border: 1px solid #000;
-      height: 280px;
+      height: 290px;
       margin-bottom: 60px;
+      width: 80%;
       img {
         height: 100%;
-        width: 40%;
+        width: 45%;
       }
       .text {
         padding: 20px 30px;
@@ -109,6 +110,7 @@
       .blog {
         flex-direction: column;
         height: auto;
+        width: 100%;
         .text {
           padding: 25px 10px;
         }

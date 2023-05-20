@@ -13,13 +13,13 @@ const Header = () => {
       <nav>
         <ul className={styles.links}>
           <li>
-            <Link href={``}>Home</Link>
+            <Link href={`/`}>Home</Link>
           </li>
           <li>
-            <Link href={``}>Blog</Link>
+            <Link href={`/blogs`}>Blog</Link>
           </li>
           <li>
-            <Link href={``}>About</Link>
+            <Link href={`/aboutMe`}>About</Link>
           </li>
           <li>
             <a href={"#contact"}>Contact</a>

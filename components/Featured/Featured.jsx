@@ -13,8 +13,8 @@ const Featured = ({ post }) => {
         <Image
           src={UrlFor(post.mainImage).url()}
           alt="image"
-          width={200}
-          height={200}
+          width={1000}
+          height={500}
         />
         <div className={styles.desc}>
           <p>

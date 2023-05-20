@@ -15,8 +15,8 @@ const Main = ({ posts }) => {
               <div key={i + post._id} className={styles.blog}>
                 <Image
                   src={urlFor(post.mainImage).url()}
-                  width={200}
-                  height={280}
+                  width={1000}
+                  height={400}
                   alt="thats me"
                 />
                 <Link href={`/post/${post.slug.current}`}>
@@ -36,7 +36,7 @@ const Main = ({ posts }) => {
             );
           }
         })}
-        <Link href={""}>
+        <Link href={"/blogs"}>
           <button>More Posts</button>
         </Link>
       </div>
@@ -49,7 +49,7 @@ const Main = ({ posts }) => {
           deleniti enim quas necessitatibus quos doloribus, ad ipsa fuga
           cupiditate, quae, reprehenderit eveniet explicabo. Facere a fugiat.
         </p>
-        <Link href={``}>
+        <Link href={`/aboutMe`}>
           <h4>Read More &rarr; </h4>
         </Link>
       </div>

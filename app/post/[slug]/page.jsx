@@ -76,7 +76,7 @@ const Post = async ({ params: { slug } }) => {
           <Image
             src={urlFor(post.mainImage).url()}
             className={styles.bgimg}
-            width={200}
+            width={1000}
             height={400}
             alt="image"
           />

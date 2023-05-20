@@ -7,7 +7,12 @@ export const RichText = {
   types: {
     image: ({ value }) => (
       <div className={styles.img}>
-        <Image src={urlFor(value).url()} alt="image" fill />
+        <Image
+          src={urlFor(value).url()}
+          alt="image"
+          width={1000}
+          height={500}
+        />
       </div>
     ),
   },
