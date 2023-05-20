@@ -6,7 +6,6 @@ import Post from "../post/Post";
 const BlogList = ({ posts }) => {
   return (
     <div className={styles.container}>
-      <hr />
       <div className={styles.BlogList}>
         {posts.map((post, _i) => (
           <Post post={post} key={post._id} />

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@heroicons/react": "^2.0.17",
     "@portabletext/react": "^2.0.2",
     "@sanity/image-url": "^1.0.2",
@@ -21,13 +22,13 @@
     "next-sanity": "^4.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
     "sanity": "^3.0.0",
     "sharp": "^0.32.0",
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^2.0.1",
-    "@types/long": "^5.0.0",
     "@types/node": "^18.15.11",
     "sass": "^1.60.0"
   }

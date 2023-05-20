@@ -1,7 +1,47 @@
 .container {
+  border-bottom: 1px solid #000;
+  margin: 130px 0 50px;
+  padding-bottom: 80px;
+  .blog {
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    padding: 60px;
+    .date {
+      font-size: 15px;
+      opacity: 0.9;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 15px 0;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      margin: 26px 0;
+    }
+    article {
+      width: 100%;
+      p {
+        margin: 20px 0;
+        font-size: 19px;
+        line-height: 1.8;
+        a {
+          color: #5151ff;
+          font-weight: 700;
+          :hover {
+            text-decoration-color: #000;
+          }
+        }
+      }
+    }
+  }
   .relatedposts {
-    width: 80%;
-    margin: 20px auto;
+    width: 70%;
+    margin: 40px auto;
+    h1 {
+      margin: 20px 0;
+    }
     .postscontainer {
       display: flex;
       align-items: center;
@@ -9,180 +49,40 @@
       width: 100%;
     }
   }
-  .share {
-    margin: 40px auto;
-    text-align: center;
-    width: 85%;
-    p {
-      text-align: center;
-      .sharecontainer {
-        margin: 45px auto;
-        font-weight: 700;
-        font-size: 18px;
-        display: flex;
-        width: 65%;
-        .copy {
-          color: #5151ff;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          :hover {
-            text-decoration: underline;
-            cursor: pointer;
-          }
-          svg {
-            width: 20px;
-          }
-        }
-      }
-    }
-    hr {
-      margin: 0 auto;
-    }
-  }
-  article {
-    width: 70%;
-    margin: 50px auto;
-    p {
-      margin: 20px 0;
-      font-size: 19px;
-      line-height: 1.8;
-      a {
-        color: #5151ff;
-        font-weight: 700;
-        :hover {
-          text-decoration-color: #000;
-        }
-      }
-    }
-  }
-  .routes {
-    display: flex;
-    width: 70%;
-    margin: 30px auto 0;
-    font-size: 14px;
-    a {
-      color: #999;
-    }
-    p {
-      margin: 0 3px;
-    }
-  }
-  .nav {
-    background-color: #fff;
-    z-index: 100;
-    color: #000;
-    position: fixed;
-    width: 100%;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    .navcontainer {
-      width: 80%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 0 auto;
-
-      .logocontainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 19px;
-      }
-      .contact {
-        font-family: sans-serif;
-        h4 {
-          display: flex;
-          align-items: center;
-          svg {
-            width: 25px;
-            margin: 0 4px;
-          }
-        }
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-  .header {
-    position: relative;
-    width: 100%;
-    height: 90vh;
-    background-color: rgba(25, 25, 35, 0.7);
-    .heroimg {
-      img {
-        z-index: -1;
-      }
-    }
-    .herotext {
-      width: 70%;
-      padding-top: 200px;
-      color: #fff;
-      margin: 0 auto;
-      h1 {
-        font-size: 3.8rem;
-        margin-bottom: 30px;
-      }
-      .date {
-        margin: 20px 0;
-      }
-      .author {
-        display: flex;
-        align-items: center;
-        .img {
-          position: relative;
-          width: 40px;
-          border-radius: 50%;
-          height: 40px;
-          border-radius: 50%;
-          overflow: hidden;
-          margin-right: 10px;
-        }
-        .bio {
-          p {
-            color: #999;
-            margin-top: 2px;
-          }
-        }
-      }
-    }
-  }
 }
 
 @media (max-width: 600px) {
   .container {
-    .relatedposts {
+    .blog {
       width: 95%;
-      .postscontainer {
-        flex-direction: column;
+      margin: 0 auto;
+      border: 1px solid #000;
+      padding: 60px 8px;
+      h1 {
+        font-size: 1.9rem;
       }
-    }
-    .share {
-      width: 100%;
-      p {
-        .sharecontainer {
-          display: block;
-          width: 100%;
-          .copy {
-            margin-bottom: 10px;
+      img {
+        height: auto;
+        margin: 15px 0;
+      }
+      article {
+        p {
+          font-size: 16px;
+          line-height: 1.4;
+          a {
+            color: #5151ff;
+            font-weight: 700;
+            :hover {
+              text-decoration-color: #000;
+            }
           }
         }
       }
     }
-    article {
+    .relatedposts {
       width: 95%;
-    }
-    .header {
-      height: 50vh;
-      .herotext {
-        width: 95%;
-        padding-top: 100px;
-        h1 {
-          font-size: 2rem;
-          margin-bottom: 20px;
-        }
+      .postscontainer {
+        flex-direction: column;
       }
     }
   }

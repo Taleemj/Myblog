@@ -1,13 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import { groq } from "next-sanity";
-import { client } from "@/lib/sanity.client";
+import { client } from "../../../lib/sanity.client";
 import styles from "./Postpage.module.scss";
 import { ClipboardIcon, ArrowLongRightIcon } from "@heroicons/react/24/solid";
-import urlFor from "@/lib/urlFor";
+import urlFor from "../../../lib/urlFor";
 import { PortableText } from "@portabletext/react";
-import { RichText } from "@/components/Richtext/RichText";
-import RelatedPosts from "@/components/RelatedPosts/RelatedPosts";
+import { RichText } from "../../../components/Richtext/RichText";
+import RelatedPosts from "../../../components/RelatedPosts/RelatedPosts";
 import Head from "next/head";
 
 export const revalidate = 30;
@@ -47,12 +47,7 @@ const Post = async ({ params: { slug } }) => {
     categories[]->
   }
   `;
-  const relatedposts = await client.fetch(query2, { post, slug });
-  const relatedposts2 = relatedposts.filter(
-    (item) =>
-      item.categories[0].title == post.categories[0].title &&
-      item.slug.current != slug
-  );
+  const relatedposts = await client.fetch(query2);
   return (
     <>
       <Head>
@@ -69,83 +64,36 @@ const Post = async ({ params: { slug } }) => {
         ></script>
       </Head>
       <main className={styles.container}>
-        <nav className={styles.nav}>
-          <div className={styles.navcontainer}>
-            <Link href="/" className={styles.logocontainer}>
-              <h1>TM BLOG</h1>
-            </Link>
-            <div className={styles.contact}>
-              <Link href="https://taleem-mankuer.web.app" target="_blank">
-                <h4>
-                  Get In Touch <ArrowLongRightIcon />
-                </h4>
-              </Link>
-            </div>
-          </div>
-        </nav>
-        <div className={styles.header}>
-          <div className={styles.heroimg}>
-            <Image
-              src={urlFor(post.mainImage).url()}
-              fill
-              className={styles.bgimg}
-              alt="image"
-            />
-          </div>
-          <div className={styles.herotext}>
-            <h1>{post.title}</h1>
-            <div className={styles.author}>
-              <div className={styles.img}>
-                <Image src={urlFor(post.author.image).url()} fill alt="image" />
-              </div>
-              <div className={styles.bio}>
-                <h4>{post.author.name}</h4>
-                <PortableText value={post.author.bio} />
-              </div>
-            </div>
-            <p className={styles.date}>
-              {new Date(post._createdAt).toLocaleDateString("en-US", {
-                day: "numeric",
-                month: "long",
-                year: "numeric",
-              })}
-            </p>
-          </div>
-        </div>
-        <div className={styles.routes}>
-          <Link href="/">HOME</Link>
-          <p>/</p>
-          <p>{postcategory}</p>
-          <p>/</p>
-          <p>{post.slug.current}</p>
-        </div>
-        <article>
-          <PortableText value={post.body} components={RichText} />
-        </article>
-        <div className={styles.share}>
-          <hr />
-          <p>
-            <span className={styles.sharecontainer}>
-              <span>
-                Useful article? Please share it with your friends hold / right
-                click
-              </span>{" "}
-              <span className={styles.copy}>
-                {" "}
-                <Link href={`/post/${slug}`}>Here</Link>
-                <ClipboardIcon />{" "}
-              </span>
-              <span>to copy link</span>
-            </span>
+        <div className={styles.blog}>
+          <p className={styles.date}>
+            {new Date(post._createdAt).toLocaleDateString("en-US", {
+              day: "numeric",
+              month: "long",
+              year: "numeric",
+            })}
           </p>
-          <hr style={{ width: "95%" }} />
+          <h1>{post.title}</h1>
+          <Image
+            src={urlFor(post.mainImage).url()}
+            className={styles.bgimg}
+            width={1000}
+            height={400}
+            alt="image"
+          />
+
+          <article>
+            <PortableText value={post.body} components={RichText} />
+          </article>
         </div>
+
         <div className={styles.relatedposts}>
-          <h1>Related Posts</h1>
+          <h1>Latest Posts</h1>
           <div className={styles.postscontainer}>
-            {relatedposts2.map((post) => (
-              <RelatedPosts key={post._id} post={post} />
-            ))}
+            {relatedposts.map((post, i) => {
+              if (i < 3) {
+                return <RelatedPosts key={post._id} post={post} />;
+              }
+            })}
           </div>
         </div>
       </main>

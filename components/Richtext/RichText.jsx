@@ -1,5 +1,5 @@
 import Link from "next/link";
-import urlFor from "@/lib/urlFor";
+import urlFor from "../../lib/urlFor";
 import Image from "next/image";
 import styles from "./RichText.module.scss";
 
@@ -7,7 +7,12 @@ export const RichText = {
   types: {
     image: ({ value }) => (
       <div className={styles.img}>
-        <Image src={urlFor(value).url()} alt="image" fill />
+        <Image
+          src={urlFor(value).url()}
+          alt="image"
+          width={1000}
+          height={500}
+        />
       </div>
     ),
   },

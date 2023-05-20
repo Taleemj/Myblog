@@ -1,12 +1,117 @@
 .container {
-  background-color: #fff;
   display: flex;
+  width: 80%;
+  height: 70vh;
+  margin: 20px auto 0;
   align-items: center;
-  justify-content: center;
-  height: 100px;
-  border-top: 1px solid #ccc;
-  text-align: center;
-  h1 {
-    margin-bottom: 10px;
+  .links {
+    width: 30%;
+    list-style: none;
+    li {
+      margin: 25px 0;
+    }
+    .socials {
+      margin-top: 3rem;
+      svg {
+        font-size: 24px;
+        margin-right: 9px;
+      }
+    }
+  }
+  .newsletter {
+    padding: 0 4rem;
+    h4 {
+      margin-bottom: 15px;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+      opacity: 0.9;
+    }
+    p {
+      font-size: 13px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    input {
+      width: 450px;
+      height: 50px;
+      padding: 0 20px;
+      display: inline-block;
+      outline: none;
+      &:hover {
+        outline: 1px solid #000;
+      }
+      &:focus {
+        outline: 1px solid #000;
+      }
+    }
+    button {
+      width: 150px;
+      height: 50px;
+      background-color: #000;
+      color: #fff;
+      outline: none;
+      border: 2px solid #000;
+
+      display: inline-block;
+      &:hover {
+        transition: all 0.3s;
+        cursor: pointer;
+        background-color: #fff;
+        color: #000;
+      }
+    }
+    .copy {
+      margin-top: 8rem;
+      svg {
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 80px 10px;
+    .links {
+      width: 100%;
+      h1 {
+        margin-bottom: 30px;
+      }
+      li {
+        margin: 25px 0;
+      }
+      .socials {
+        margin-top: 1rem;
+        svg {
+          font-size: 25px;
+          margin-right: 4px;
+        }
+      }
+    }
+    .newsletter {
+      margin: 50px 0;
+      padding: 0;
+      width: 100%;
+      h4 {
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+      input {
+        width: 70%;
+        height: 50px;
+      }
+      button {
+        width: 30%;
+        height: 50px;
+      }
+      .copy {
+        margin-top: 2rem;
+      }
+    }
   }
 }
