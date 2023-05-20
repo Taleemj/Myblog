@@ -4,7 +4,6 @@ import Header from "../components/header/Header";
 import { client } from "../lib/sanity.client";
 import PreviewSuspense from "../components/PreviewSuspense";
 import PreviewBlogList from "../components/PreviewBlogList/PreviewBlogList";
-import BlogList from "../components/BlogList/BlogList";
 import Hero from "../components/Hero/Hero";
 import Featured from "../components/Featured/Featured";
 import Newsletter from "../components/Newsletter/Newsletter";
