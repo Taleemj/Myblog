@@ -90,7 +90,7 @@ const Post = async ({ params: { slug } }) => {
           <h1>Latest Posts</h1>
           <div className={styles.postscontainer}>
             {relatedposts.map((post, i) => {
-              if (i < 3) {
+              if (i < 4 && post.slug.current !== slug) {
                 return <RelatedPosts key={post._id} post={post} />;
               }
             })}
