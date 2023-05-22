@@ -14,16 +14,16 @@ const Footer = () => {
           <h1>The Developer Blog</h1>
         </li>
         <li>
-          <Link href={``}>Home</Link>
+          <Link href={`/`}>Home</Link>
         </li>
         <li>
-          <Link href={``}>Blog</Link>
+          <Link href={`/blogs`}>Blog</Link>
         </li>
         <li>
-          <Link href={``}>About</Link>
+          <Link href={`/aboutMe`}>About</Link>
         </li>
         <li>
-          <Link href={``}>Contact</Link>
+          <a href="#contact">Contact</a>
         </li>
         <div className={styles.socials}>
           <Link
