@@ -44,10 +44,12 @@ const Main = ({ posts }) => {
         <h1>about me</h1>
         <Image src={image} alt="thats me" />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
-          fugit quos! Incidunt aut numquam nobis vero in asperiores quis
-          deleniti enim quas necessitatibus quos doloribus, ad ipsa fuga
-          cupiditate, quae, reprehenderit eveniet explicabo. Facere a fugiat.
+          My name is Taleem Mankuer, the creator of the developer blog an
+          aspiring developer and student specialing in frontend web development.
+          I work with React and Next js and enjoy finding creative solutions to
+          problems related to web development and spend my time experimenting
+          with technologies and inhale a wide variety of potentially useful
+          information through different platforms.
         </p>
         <Link href={`/aboutMe`}>
           <h4>Read More &rarr; </h4>
