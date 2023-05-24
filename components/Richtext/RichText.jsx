@@ -26,7 +26,9 @@ export const RichText = {
     h4: ({ children }) => <h4 className={styles.h4}>{children}</h4>,
     h5: ({ children }) => <h5 className={styles.h5}>{children}</h5>,
     h6: ({ children }) => <h6 className={styles.h6}>{children}</h6>,
-    blockquote: ({ children }) => <blockquote>{children}</blockquote>,
+    blockquote: ({ children }) => (
+      <blockquote className={styles.quote}>{children}</blockquote>
+    ),
   },
   marks: {
     Links: ({ children, value }) => {

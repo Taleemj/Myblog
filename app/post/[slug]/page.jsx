@@ -38,16 +38,16 @@ const Post = async ({ params: { slug } }) => {
   }
   `;
   const post = await client.fetch(query, { slug });
-  const postcategory = post.categories[0].title;
 
   const query2 = groq`
   *[_type == "post"]{
     ...,
     author->,
     categories[]->
-  }
+  } | order(_createdAt desc)
   `;
-  const relatedposts = await client.fetch(query2);
+  const posts = await client.fetch(query2);
+  const latestPosts = posts.filter((post) => post.slug.current !== slug);
   return (
     <>
       <Head>
@@ -89,8 +89,8 @@ const Post = async ({ params: { slug } }) => {
         <div className={styles.relatedposts}>
           <h1>Latest Posts</h1>
           <div className={styles.postscontainer}>
-            {relatedposts.map((post, i) => {
-              if (i < 4 && post.slug.current !== slug) {
+            {latestPosts.map((post, i) => {
+              if (i < 3) {
                 return <RelatedPosts key={post._id} post={post} />;
               }
             })}
