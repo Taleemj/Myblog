@@ -11,7 +11,7 @@ const Post = ({ post }) => {
         <div className={styles.imgcontainer}>
           <Image
             src={urlFor(post.mainImage).url()}
-            width={250}
+            width={1000}
             height={300}
             alt={post.author.name}
           />
