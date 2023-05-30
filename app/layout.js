@@ -3,7 +3,7 @@
 //   description: "get the latest in programming and web development",
 //   googlesiteverification: "O_grUoAkNqBhd8JaaX1YpzQO4ti2Njc6w_Oul2kjNRQ",
 // };
-import "../styles/globals.css";
+import "../styles/globals.scss";
 import Footer from "../components/Footer/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "../components/header/Header";
