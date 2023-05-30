@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://thedeveloperblog.vercel.app/</loc>
+  <lastmod>2023-05-30T19:17:46+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://thedeveloperblog.vercel.app/blogs</loc>
+  <lastmod>2023-05-30T19:17:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thedeveloperblog.vercel.app/aboutMe</loc>
+  <lastmod>2023-05-30T19:17:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thedeveloperblog.vercel.app/post/how-to-convert-a-number-to-binary-base-2-8-and-16-in-javascript</loc>
+  <lastmod>2023-05-30T19:17:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thedeveloperblog.vercel.app/post/how-to-become-a-frontend-web-developer-2023</loc>
+  <lastmod>2023-05-30T19:17:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thedeveloperblog.vercel.app/post/top-web-developer-tools-and-software</loc>
+  <lastmod>2023-05-30T19:17:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thedeveloperblog.vercel.app/post/7-reasons-to-have-a-website-for-your-business</loc>
+  <lastmod>2023-05-30T19:17:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thedeveloperblog.vercel.app/post/top-5-programming-languages-to-learn-in-2023</loc>
+  <lastmod>2023-05-30T19:17:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thedeveloperblog.vercel.app/post/full-stack-web-developer-roadmap</loc>
+  <lastmod>2023-05-30T19:17:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thedeveloperblog.vercel.app/post/top-10-youtube-channels-to-learn-programming</loc>
+  <lastmod>2023-05-30T19:17:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
