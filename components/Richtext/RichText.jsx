@@ -6,11 +6,11 @@ import styles from "./RichText.module.scss";
 export const RichText = {
   types: {
     image: ({ value }) => (
-      <div className={styles.img}>
+      <div className={styles.imagebox}>
         <Image
           src={urlFor(value).url()}
           alt="image"
-          width={1000}
+          width={5000}
           height={500}
         />
       </div>

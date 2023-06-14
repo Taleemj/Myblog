@@ -73,13 +73,15 @@ const Post = async ({ params: { slug } }) => {
             })}
           </p>
           <h1>{post.title}</h1>
-          <Image
-            src={urlFor(post.mainImage).url()}
-            className={styles.bgimg}
-            width={1000}
-            height={400}
-            alt="image"
-          />
+          <div className={styles.imagebox}>
+            <Image
+              src={urlFor(post.mainImage).url()}
+              className={styles.bgimg}
+              width={1000}
+              height={400}
+              alt="image"
+            />
+          </div>
 
           <article>
             <PortableText value={post.body} components={RichText} />
