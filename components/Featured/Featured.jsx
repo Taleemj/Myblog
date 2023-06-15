@@ -8,7 +8,7 @@ const Featured = ({ post }) => {
     <div className={styles.container}>
       <Link href={`post/${post.slug.current}`} className={styles.post}>
         <div className={styles.featuredFlag}>
-          <h1>FEATURED POST</h1>
+          <h1>LATEST POST</h1>
         </div>
         <Image
           src={UrlFor(post.mainImage).url()}
