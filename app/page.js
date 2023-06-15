@@ -20,20 +20,6 @@ const query = groq`
 export const revalidate = 30;
 
 const page = async () => {
-  if (previewData()) {
-    return (
-      <PreviewSuspense>
-        <div className="container">
-          <Header />
-          <div>In preview mode</div>
-          <div>
-            <PreviewBlogList query={query} />
-          </div>
-        </div>
-      </PreviewSuspense>
-    );
-  }
-
   const posts = await client.fetch(query);
   return (
     <div className="container">
