@@ -1,9 +1,5 @@
-import { previewData } from "next/headers";
 import { groq } from "next-sanity";
-import Header from "../components/header/Header";
 import { client } from "../lib/sanity.client";
-import PreviewSuspense from "../components/PreviewSuspense";
-import PreviewBlogList from "../components/PreviewBlogList/PreviewBlogList";
 import Hero from "../components/Hero/Hero";
 import Featured from "../components/Featured/Featured";
 import Newsletter from "../components/Newsletter/Newsletter";
