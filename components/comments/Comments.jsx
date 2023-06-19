@@ -34,6 +34,11 @@ const Comments = ({ postId, comments }) => {
     <div className={Styles.container}>
       <p className={Styles.heading}>comments</p>
       <div className={Styles.rule} />
+      {(isSubmitting == false) & (hasSubmitted == false) ? (
+        <p className={Styles.heading}>Add comment.</p>
+      ) : (
+        ""
+      )}
       {isSubmitting && <h3>Submitting comment…</h3>}
       {hasSubmitted && (
         <>
