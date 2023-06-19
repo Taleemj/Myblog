@@ -9,6 +9,7 @@ import { PortableText } from "@portabletext/react";
 import { RichText } from "../../../components/Richtext/RichText";
 import RelatedPosts from "../../../components/RelatedPosts/RelatedPosts";
 import Head from "next/head";
+import Comments from "@/components/comments/Comments";
 
 export const revalidate = 30;
 
@@ -48,6 +49,11 @@ const Post = async ({ params: { slug } }) => {
   `;
   const posts = await client.fetch(query2);
   const latestPosts = posts.filter((post) => post.slug.current !== slug);
+
+  const query3 = groq`
+  *[_type == "comment" && approved == true]
+  `;
+  const comments = await client.fetch(query3);
   return (
     <>
       <Head>
@@ -87,7 +93,7 @@ const Post = async ({ params: { slug } }) => {
             <PortableText value={post.body} components={RichText} />
           </article>
         </div>
-
+        <Comments postId={post._id} comments={comments} />
         <div className={styles.relatedposts}>
           <h1>Latest Posts</h1>
           <div className={styles.postscontainer}>
