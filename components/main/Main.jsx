@@ -8,7 +8,9 @@ const Main = ({ posts }) => {
   return (
     <div className={styles.container}>
       <div className={styles.blogs}>
-        <h1>The developer blog</h1>
+        <strong>
+          <h1>The developer blog</h1>
+        </strong>
         {posts.map((post, i) => {
           if ((i < 6) & (i !== 0)) {
             return (

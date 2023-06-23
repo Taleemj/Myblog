@@ -11,7 +11,9 @@ const Footer = () => {
     <div className={styles.container}>
       <ul className={styles.links}>
         <li>
-          <h1>The Developer Blog</h1>
+          <strong>
+            <h1>The Developer Blog</h1>
+          </strong>
         </li>
         <li>
           <Link href={`/`}>Home</Link>
