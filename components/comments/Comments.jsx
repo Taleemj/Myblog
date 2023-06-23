@@ -63,6 +63,7 @@ const Comments = ({ postId, comments }) => {
             {...register("name")}
             required
           />
+          <p className={Styles.emailps}>*Your email will not be made public.</p>
           <input
             required
             type="email"

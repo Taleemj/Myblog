@@ -18,6 +18,10 @@
     display: flex;
     flex-direction: column;
     margin-top: 25px;
+    .emailps {
+      font-size: 13px;
+      color: #4b4b4b;
+    }
     input,
     textarea {
       margin: 10px 0;
