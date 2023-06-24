@@ -1,5 +1,5 @@
 import { groq } from "next-sanity";
-import { client } from "../../../lib/sanity.client";
+import { client } from "../../../../lib/sanity.client";
 
 const head = async ({ params: { slug } }) => {
   const query = groq`

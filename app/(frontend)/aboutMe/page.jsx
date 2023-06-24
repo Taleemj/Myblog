@@ -1,6 +1,6 @@
 import styles from "./Aboutme.module.scss";
 import Image from "next/image";
-import image from "../../assets/img2.jpg";
+import image from "../../../assets/img2.jpg";
 import Link from "next/link";
 
 const page = () => {

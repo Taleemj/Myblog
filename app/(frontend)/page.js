@@ -1,9 +1,9 @@
 import { groq } from "next-sanity";
-import { client } from "../lib/sanity.client";
-import Hero from "../components/Hero/Hero";
-import Featured from "../components/Featured/Featured";
-import Newsletter from "../components/Newsletter/Newsletter";
-import Main from "../components/main/Main";
+import { client } from "../../lib/sanity.client";
+import Hero from "../../components/Hero/Hero";
+import Featured from "../../components/Featured/Featured";
+import Newsletter from "../../components/Newsletter/Newsletter";
+import Main from "../../components/main/Main";
 
 const query = groq`
 *[_type =="post"]{
@@ -15,7 +15,7 @@ const query = groq`
 
 export const revalidate = 30;
 
-const page = async () => {
+const Page = async () => {
   const posts = await client.fetch(query);
   return (
     <div className="container">
@@ -27,4 +27,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default Page;
