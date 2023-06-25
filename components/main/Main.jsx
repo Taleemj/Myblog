@@ -21,7 +21,7 @@ const Main = ({ posts }) => {
                   height={400}
                   alt="thats me"
                 />
-                <Link href={`/post/${post.slug.current}`}>
+                <Link href={`/posts/${post.slug.current}`}>
                   <div className={styles.text}>
                     <p>
                       {new Date(post._createdAt).toLocaleDateString("en-US", {
@@ -38,7 +38,7 @@ const Main = ({ posts }) => {
             );
           }
         })}
-        <Link href={"/blogs"}>
+        <Link href={"/posts"}>
           <button>More Posts</button>
         </Link>
       </div>

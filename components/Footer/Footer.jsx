@@ -19,7 +19,7 @@ const Footer = () => {
           <Link href={`/`}>Home</Link>
         </li>
         <li>
-          <Link href={`/blogs`}>Blog</Link>
+          <Link href={`/posts`}>Posts</Link>
         </li>
         <li>
           <Link href={`/aboutMe`}>About</Link>
