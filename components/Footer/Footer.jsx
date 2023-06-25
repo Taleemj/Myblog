@@ -1,5 +1,6 @@
 import styles from "./Footer.module.scss";
 import Link from "next/link";
+import Script from "next/script";
 import {
   AiOutlineLinkedin,
   AiFillGithub,
@@ -49,17 +50,21 @@ const Footer = () => {
         </div>
       </ul>
       <div className={styles.newsletter}>
-        <h4>Don&apos;t miss a post</h4>
-        <p>Enter your email here*</p>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email Address"
+        <iframe
+          data-w-type="embedded"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://0ysz6.mjt.lu/wgt/0ysz6/hh1/form?c=84d47493"
+          width="100%"
+        ></iframe>
+
+        <Script
+          type="text/javascript"
+          src=" https://app.mailjet.com/pas-nc-embedded-v1.js"
         />
-        <Link href={``}>
-          <button>Subscribe</button>
-        </Link>
+
         <p className={styles.copy}>
           2023 made with <AiOutlineHeart /> by Taleem
         </p>
