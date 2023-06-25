@@ -27,6 +27,10 @@ const Footer = () => {
         <li>
           <a href="#contact">Contact</a>
         </li>
+
+        <li>
+          <Link href={"/privacy-policy"}>Privacy Policy</Link>
+        </li>
         <div className={styles.socials}>
           <Link
             href={`https://www.linkedin.com/in/taleem-mankuer-713367235/`}
