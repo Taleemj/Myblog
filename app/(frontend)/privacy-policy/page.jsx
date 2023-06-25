@@ -10,11 +10,11 @@ const Page = () => {
         Service and tells You about Your privacy rights and how the law protects
         You.
       </p>
-      <p>We don’t store personal information on our servers</p>
+      <p>We don&apos;t store personal information on our servers</p>
       <p>
-        We don’t share your personal information with anyone except to comply
-        with the law, develop our products, or protect our rights. This Privacy
-        Policy has been created with the help of the{" "}
+        We don&apos;t share your personal information with anyone except to
+        comply with the law, develop our products, or protect our rights. This
+        Privacy Policy has been created with the help of the{" "}
         <a
           href="https://www.privacypolicies.com/privacy-policy-generator/"
           target="_blank"
@@ -127,7 +127,7 @@ const Page = () => {
       <h1>Usage Data</h1>
       <p>Usage Data is collected automatically when using the Service.</p>
       <p>
-        Usage Data may include information such as Your Device's Internet
+        Usage Data may include information such as Your Device&apos;s Internet
         Protocol address (e.g. IP address), browser type, browser version, the
         pages of our Service that You visit, the time and date of Your visit,
         the time spent on those pages, unique device identifiers and other
@@ -153,9 +153,9 @@ const Page = () => {
       <p>
         We do use any Cookies except ones set automatically by analytic tools
         such as google analytics to store and count page views, calculate
-        visitor, session and campaign data and track site usage for the site's
-        analytics report. The cookie stores information anonymously and assigns
-        a randomly generated number to recognise unique visitors.
+        visitor, session and campaign data and track site usage for the
+        site&apos;s analytics report. The cookie stores information anonymously
+        and assigns a randomly generated number to recognise unique visitors.
       </p>
       <h2>Use of Your Data</h2>
       <p>The Company may use Data for the following purposes:</p>
@@ -228,8 +228,8 @@ const Page = () => {
       <p>
         Our Service may contain links to other websites that are not operated by
         Us. If You click on a third party link, You will be directed to that
-        third party's site. We strongly advise You to review the Privacy Policy
-        of every site You visit.
+        third party&apos;s site. We strongly advise You to review the Privacy
+        Policy of every site You visit.
       </p>
       <p>
         We have no control over and assume no responsibility for the content,
