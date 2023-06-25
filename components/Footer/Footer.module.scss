@@ -9,6 +9,9 @@
     list-style: none;
     li {
       margin: 25px 0;
+      &:hover {
+        text-decoration: underline;
+      }
     }
     .socials {
       margin-top: 3rem;
