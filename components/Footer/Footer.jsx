@@ -73,7 +73,7 @@ const Footer = () => {
           </span>
           <br />
           <span>
-            Design inspired by wix's{" "}
+            Design inspired by wix&apos;s{" "}
             <a
               target="_blank"
               rel="noreferrer"
