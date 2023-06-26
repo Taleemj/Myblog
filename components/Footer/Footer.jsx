@@ -66,7 +66,31 @@ const Footer = () => {
         />
 
         <p className={styles.copy}>
-          2023 made with <AiOutlineHeart /> by Taleem
+          <span className={styles.copy2}>
+            2023 made with
+            <AiOutlineHeart />
+            by Taleem{" "}
+          </span>
+          <br />
+          <span>
+            Design inspired by wix's{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.wix.com/website-template/view/html/2502"
+            >
+              Train of thought
+            </a>{" "}
+            and{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.wix.com/website-template/view/html/2747"
+            >
+              Poise
+            </a>{" "}
+            templates.
+          </span>
         </p>
       </div>
     </div>
