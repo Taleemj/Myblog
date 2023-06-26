@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   margin: 130px 0 50px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   border-bottom: 1px solid #000;
   .aboutme {
     width: 70%;
@@ -19,6 +19,9 @@
         line-height: 1.7;
         opacity: 0.9;
         margin-bottom: 15px;
+      }
+      .bye {
+        margin-top: 50px;
       }
       button {
         width: 180px;

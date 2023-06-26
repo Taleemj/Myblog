@@ -19,6 +19,12 @@ const page = () => {
             potentially useful information through different platforms.
           </p>
           <p>
+            I created the developer blog so that i can be able to share by
+            knowledge, skills, also learn more and grow as a developer along the
+            way and hopefully build a community of like minded people around the
+            world.
+          </p>
+          <p>
             I enjoy making conections and trying out new things, i love to
             increase my skills and knowledge and would love to advance in my
             career as a developer. I am open for any opportunities and
@@ -33,6 +39,7 @@ const page = () => {
           >
             <button>Portfolio</button>
           </Link>
+          <p className={styles.bye}>Thanks for stopping by. &#128075;</p>
         </div>
       </div>
     </div>
