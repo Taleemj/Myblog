@@ -56,7 +56,7 @@ const Post = async ({ params: { slug } }) => {
   return (
     <div className={styles.main}>
       <div className={styles.ads}>
-        {/* <amp-ad
+        <amp-ad
           width="100vw"
           height="320"
           type="adsense"
@@ -66,7 +66,7 @@ const Post = async ({ params: { slug } }) => {
           data-full-width=""
         >
           <div overflow=""></div>
-        </amp-ad> */}
+        </amp-ad>
       </div>
       <main className={styles.container}>
         <div className={styles.blog}>
@@ -90,9 +90,31 @@ const Post = async ({ params: { slug } }) => {
 
           <article>
             <PortableText value={post.body} components={RichText} />
+            <amp-ad
+              width="100vw"
+              height="320"
+              type="adsense"
+              data-ad-client="ca-pub-8299193659017860"
+              data-ad-slot="6865746235"
+              data-auto-format="rspv"
+              data-full-width=""
+            >
+              <div overflow=""></div>
+            </amp-ad>
           </article>
         </div>
         <Comments postId={post._id} comments={comments} />
+        <amp-ad
+          width="100vw"
+          height="320"
+          type="adsense"
+          data-ad-client="ca-pub-8299193659017860"
+          data-ad-slot="6865746235"
+          data-auto-format="rspv"
+          data-full-width=""
+        >
+          <div overflow=""></div>
+        </amp-ad>
         <div className={styles.relatedposts}>
           <h1>Latest Posts</h1>
           <div className={styles.postscontainer}>
@@ -105,7 +127,7 @@ const Post = async ({ params: { slug } }) => {
         </div>
       </main>
       <div className={styles.ads}>
-        {/* <amp-ad
+        <amp-ad
           width="100vw"
           height="320"
           type="adsense"
@@ -115,7 +137,7 @@ const Post = async ({ params: { slug } }) => {
           data-full-width=""
         >
           <div overflow=""></div>
-        </amp-ad> */}
+        </amp-ad>
       </div>
     </div>
   );
