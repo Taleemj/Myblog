@@ -6,7 +6,7 @@ import ClientSideRoute from "../ClientSideRoute";
 
 const Post = ({ post }) => {
   return (
-    <ClientSideRoute route={`/posts/${post.slug.current}`}>
+    <ClientSideRoute route={`/post/${post.slug.current}`}>
       <div className={styles.blog}>
         <div className={styles.imgcontainer}>
           <Image

@@ -20,7 +20,7 @@ const Footer = () => {
           <Link href={`/`}>Home</Link>
         </li>
         <li>
-          <Link href={`/posts`}>Posts</Link>
+          <Link href={`/post`}>Posts</Link>
         </li>
         <li>
           <Link href={`/aboutMe`}>About</Link>
@@ -52,10 +52,10 @@ const Footer = () => {
       <div className={styles.newsletter}>
         <iframe
           data-w-type="embedded"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
-          marginheight="0"
-          marginwidth="0"
+          marginHeight="0"
+          marginWidth="0"
           src="https://0ysz6.mjt.lu/wgt/0ysz6/hh1/form?c=84d47493"
           width="100%"
         ></iframe>

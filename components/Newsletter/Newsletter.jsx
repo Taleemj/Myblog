@@ -19,10 +19,10 @@ const Newsletter = () => {
       </form> */}
       <iframe
         data-w-type="embedded"
-        frameborder="0"
+        frameBorder="0"
         scrolling="no"
-        marginheight="0"
-        marginwidth="0"
+        marginHeight="0"
+        marginWidth="0"
         src="https://0ysz6.mjt.lu/wgt/0ysz6/hh0/form?c=a303c1e0"
         width="100%"
       ></iframe>

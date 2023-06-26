@@ -6,7 +6,7 @@ import Link from "next/link";
 const Featured = ({ post }) => {
   return (
     <div className={styles.container}>
-      <Link href={`posts/${post.slug.current}`} className={styles.post}>
+      <Link href={`post/${post.slug.current}`} className={styles.post}>
         <div className={styles.featuredFlag}>
           <h1>LATEST POST</h1>
         </div>
