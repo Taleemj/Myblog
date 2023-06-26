@@ -127,20 +127,17 @@ const Page = () => {
       <h1>Usage Data</h1>
       <p>Usage Data is collected automatically when using the Service.</p>
       <p>
-        Usage Data may include information such as Your Device&apos;s Internet
-        Protocol address (e.g. IP address), browser type, browser version, the
-        pages of our Service that You visit, the time and date of Your visit,
-        the time spent on those pages, unique device identifiers and other
-        diagnostic data. These are automatically collect by the use of analytics
-        tools such as google analytics.
+        Usage Data may include information such as your browser type, browser
+        version, the pages of our Service that You visit, the time and date of
+        Your visit, the time spent on those pages, unique device identifiers and
+        other diagnostic data. These are automatically collect by the use of
+        analytics tools such as google analytics.
       </p>
       <p>
         When You access the Service by or through a mobile device, We may
-        collect certain information automatically, including, but not limited
-        to, the type of mobile device You use, the IP address of Your mobile
-        device, Your mobile operating system, the type of mobile Internet
-        browser You use. These are also automatically collect by analytics
-        tools.
+        collect certain information automatically, including, Your mobile
+        operating system, the type of mobile Internet browser You use. These are
+        also automatically collect by analytics tools.
       </p>
       <h1>Comments</h1>
       <p>
