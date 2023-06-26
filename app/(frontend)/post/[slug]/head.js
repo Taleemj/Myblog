@@ -33,6 +33,11 @@ const head = async ({ params: { slug } }) => {
         href="/favicon-32x32.png"
       />
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+      {/* <script
+        async
+        custom-element="amp-ad"
+        src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
+      ></script> */}
       <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8299193659017860"

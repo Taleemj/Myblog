@@ -1,10 +1,18 @@
-.container {
+.main {
+  .ads {
+    width: 15%;
+    padding: 20px 10px;
+  }
+  display: flex;
   border-bottom: 1px solid #000;
+}
+.container {
   margin: 130px 0 50px;
   padding-bottom: 80px;
+  width: 70%;
   .blog {
-    width: 70%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     border: 1px solid #000;
     padding: 60px;
     .date {
@@ -67,7 +75,7 @@
   }
 
   .relatedposts {
-    width: 70%;
+    width: 100%;
     margin: 40px auto;
     h1 {
       margin: 20px 0;
@@ -82,9 +90,16 @@
 }
 
 @media (max-width: 600px) {
+  .main {
+    .ads {
+      display: none;
+    }
+  }
   .container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
     .blog {
-      width: 95%;
       margin: 0 auto;
       border: 1px solid #000;
       padding: 60px 8px;
@@ -110,7 +125,7 @@
       }
     }
     .relatedposts {
-      width: 95%;
+      width: 100%;
       .postscontainer {
         flex-direction: column;
       }

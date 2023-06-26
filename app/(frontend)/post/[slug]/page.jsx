@@ -8,7 +8,6 @@ import urlFor from "../../../../lib/urlFor";
 import { PortableText } from "@portabletext/react";
 import { RichText } from "../../../../components/Richtext/RichText";
 import RelatedPosts from "../../../../components/RelatedPosts/RelatedPosts";
-import Head from "next/head";
 import Comments from "@/components/comments/Comments";
 
 export const revalidate = 30;
@@ -55,20 +54,20 @@ const Post = async ({ params: { slug } }) => {
   `;
   const comments = await client.fetch(query3);
   return (
-    <>
-      <Head>
-        <title>{post.title}</title>
-        <meta name="description" content={`${post.description}`} />
-        <meta
-          name="google-site-verification"
-          content="O_grUoAkNqBhd8JaaX1YpzQO4ti2Njc6w_Oul2kjNRQ"
-        />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8299193659017860"
-          crossOrigin="anonymous"
-        ></script>
-      </Head>
+    <div className={styles.main}>
+      <div className={styles.ads}>
+        {/* <amp-ad
+          width="100vw"
+          height="320"
+          type="adsense"
+          data-ad-client="ca-pub-8299193659017860"
+          data-ad-slot="5863084931"
+          data-auto-format="rspv"
+          data-full-width=""
+        >
+          <div overflow=""></div>
+        </amp-ad> */}
+      </div>
       <main className={styles.container}>
         <div className={styles.blog}>
           <p className={styles.date}>
@@ -105,7 +104,20 @@ const Post = async ({ params: { slug } }) => {
           </div>
         </div>
       </main>
-    </>
+      <div className={styles.ads}>
+        {/* <amp-ad
+          width="100vw"
+          height="320"
+          type="adsense"
+          data-ad-client="ca-pub-8299193659017860"
+          data-ad-slot="5863084931"
+          data-auto-format="rspv"
+          data-full-width=""
+        >
+          <div overflow=""></div>
+        </amp-ad> */}
+      </div>
+    </div>
   );
 };
 
