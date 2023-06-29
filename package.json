@@ -16,6 +16,7 @@
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.0.0",
     "@vercel/analytics": "^0.1.11",
+    "babel-plugin-prismjs": "^2.1.0",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "glob": "^10.2.2",
@@ -27,7 +28,6 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.44.3",
     "react-icons": "^4.8.0",
-    "react-syntax-highlighter": "^15.5.0",
     "sanity": "^3.0.0",
     "sharp": "^0.32.0",
     "styled-components": "^5.2.0"

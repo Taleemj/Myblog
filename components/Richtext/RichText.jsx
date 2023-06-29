@@ -2,9 +2,15 @@ import Link from "next/link";
 import urlFor from "../../lib/urlFor";
 import Image from "next/image";
 import styles from "./RichText.module.scss";
+import Prism from "prismjs";
+import CopyText from "../CopyText";
+import Codeblock from "../Codeblock";
 
 export const RichText = {
   types: {
+    code: ({ value }) => (
+      <Codeblock styles={styles} code={value.code} lang={value.language} />
+    ),
     image: ({ value }) => (
       <div className={styles.imagebox}>
         <Image
