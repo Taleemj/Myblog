@@ -14,9 +14,17 @@
   max-height: 600px;
   margin: 20px 0;
   position: relative;
+  padding: 10px;
+  display: flex;
+  border: 2px solid hsl(0, 0%, 33%);
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
   button {
-    position: absolute;
+    position: sticky;
     z-index: 12;
+    margin-left: 20px;
+    // margin-bottom: 50%;
     top: 15px;
     right: 15px;
     cursor: pointer;
