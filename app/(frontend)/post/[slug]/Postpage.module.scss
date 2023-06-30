@@ -3,9 +3,10 @@
     background-color: #000;
     position: fixed;
     top: 78px;
-    height: 4px;
+    height: 6px;
     z-index: 99999999999;
     left: 0;
+    border: 0.2px solid #fff;
   }
   .ads {
     width: 15%;
@@ -100,7 +101,7 @@
 @media (max-width: 600px) {
   .main {
     .progress {
-      height: 5px;
+      height: 8px;
     }
     .ads {
       display: none;
