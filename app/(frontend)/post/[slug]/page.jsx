@@ -9,6 +9,7 @@ import { PortableText } from "@portabletext/react";
 import { RichText } from "../../../../components/Richtext/RichText";
 import RelatedPosts from "../../../../components/RelatedPosts/RelatedPosts";
 import Comments from "@/components/comments/Comments";
+import ScrollBar from "@/components/ScrollBar";
 
 export const revalidate = 30;
 
@@ -55,6 +56,7 @@ const Post = async ({ params: { slug } }) => {
   const comments = await client.fetch(query3);
   return (
     <div className={styles.main}>
+      <ScrollBar styles={styles} />
       <div className={styles.ads}>
         <amp-ad
           width="100vw"

@@ -1,4 +1,12 @@
 .main {
+  .progress {
+    background-color: #000;
+    position: fixed;
+    top: 78px;
+    height: 4px;
+    z-index: 99999999999;
+    left: 0;
+  }
   .ads {
     width: 15%;
     padding: 20px 10px;
@@ -91,6 +99,9 @@
 
 @media (max-width: 600px) {
   .main {
+    .progress {
+      height: 5px;
+    }
     .ads {
       display: none;
     }
