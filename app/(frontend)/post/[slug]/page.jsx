@@ -10,6 +10,7 @@ import { RichText } from "../../../../components/Richtext/RichText";
 import RelatedPosts from "../../../../components/RelatedPosts/RelatedPosts";
 import Comments from "@/components/comments/Comments";
 import ScrollBar from "@/components/ScrollBar";
+import Script from "next/script";
 
 export const revalidate = 30;
 
@@ -58,7 +59,7 @@ const Post = async ({ params: { slug } }) => {
     <div className={styles.main}>
       <ScrollBar styles={styles} />
       <div className={styles.ads}>
-        <amp-ad
+        {/* <amp-ad
           width="100vw"
           height="320"
           type="adsense"
@@ -68,7 +69,8 @@ const Post = async ({ params: { slug } }) => {
           data-full-width=""
         >
           <div overflow=""></div>
-        </amp-ad>
+        </amp-ad> */}
+        <Script src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"></Script>
       </div>
       <main className={styles.container}>
         <div className={styles.blog}>
@@ -129,7 +131,7 @@ const Post = async ({ params: { slug } }) => {
         </div>
       </main>
       <div className={styles.ads}>
-        <amp-ad
+        {/* <amp-ad
           width="100vw"
           height="320"
           type="adsense"
@@ -139,7 +141,8 @@ const Post = async ({ params: { slug } }) => {
           data-full-width=""
         >
           <div overflow=""></div>
-        </amp-ad>
+        </amp-ad> */}
+        <Script src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"></Script>
       </div>
     </div>
   );

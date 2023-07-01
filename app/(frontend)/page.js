@@ -4,6 +4,7 @@ import Hero from "../../components/Hero/Hero";
 import Featured from "../../components/Featured/Featured";
 import Newsletter from "../../components/Newsletter/Newsletter";
 import Main from "../../components/main/Main";
+import Script from "next/script";
 
 const query = groq`
 *[_type =="post"]{
@@ -22,6 +23,7 @@ const Page = async () => {
       <Hero />
       <Featured post={posts[0]} />
       <Newsletter />
+      <Script src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDI7aG9yaXpvbnRhbC5iYW5uZXI=&index=1" />
       <Main posts={posts} />
     </div>
   );
