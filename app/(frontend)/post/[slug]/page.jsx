@@ -70,7 +70,7 @@ const Post = async ({ params: { slug } }) => {
           <div overflow=""></div>
         </amp-ad> */}
         <script
-          async
+          defer
           src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"
         ></script>
       </div>
@@ -145,7 +145,7 @@ const Post = async ({ params: { slug } }) => {
           <div overflow=""></div>
         </amp-ad> */}
         <script
-          async
+          defer
           src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"
         ></script>
       </div>
