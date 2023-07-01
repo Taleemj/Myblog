@@ -10,7 +10,6 @@ import { RichText } from "../../../../components/Richtext/RichText";
 import RelatedPosts from "../../../../components/RelatedPosts/RelatedPosts";
 import Comments from "@/components/comments/Comments";
 import ScrollBar from "@/components/ScrollBar";
-import Script from "next/script";
 
 export const revalidate = 30;
 
@@ -70,7 +69,7 @@ const Post = async ({ params: { slug } }) => {
         >
           <div overflow=""></div>
         </amp-ad> */}
-        <Script src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"></Script>
+        <script src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"></script>
       </div>
       <main className={styles.container}>
         <div className={styles.blog}>
@@ -142,7 +141,7 @@ const Post = async ({ params: { slug } }) => {
         >
           <div overflow=""></div>
         </amp-ad> */}
-        <Script src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"></Script>
+        <script src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"></script>
       </div>
     </div>
   );

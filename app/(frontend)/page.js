@@ -23,7 +23,7 @@ const Page = async () => {
       <Hero />
       <Featured post={posts[0]} />
       <Newsletter />
-      <Script src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDI7aG9yaXpvbnRhbC5iYW5uZXI=&index=1" />
+      <script src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDI7aG9yaXpvbnRhbC5iYW5uZXI=&index=1"></script>
       <Main posts={posts} />
     </div>
   );
