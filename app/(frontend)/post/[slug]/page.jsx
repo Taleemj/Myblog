@@ -69,7 +69,10 @@ const Post = async ({ params: { slug } }) => {
         >
           <div overflow=""></div>
         </amp-ad> */}
-        <script src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"></script>
+        <script
+          async
+          src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"
+        ></script>
       </div>
       <main className={styles.container}>
         <div className={styles.blog}>
@@ -141,7 +144,10 @@ const Post = async ({ params: { slug } }) => {
         >
           <div overflow=""></div>
         </amp-ad> */}
-        <script src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"></script>
+        <script
+          async
+          src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"
+        ></script>
       </div>
     </div>
   );
