@@ -34,6 +34,11 @@ const Page = async () => {
       ></script>
       <div id="container-db5a30a7a3e08b7d754cc80feee53da7"></div>
       <Main posts={posts} />
+      <script
+        async="async"
+        data-cfasync="false"
+        src="//pl19914491.highrevenuegate.com/db5a30a7a3e08b7d754cc80feee53da7/invoke.js"
+      ></script>
       <div id="container-db5a30a7a3e08b7d754cc80feee53da7"></div>
     </div>
   );
