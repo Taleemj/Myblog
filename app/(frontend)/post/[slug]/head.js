@@ -14,6 +14,11 @@ const head = async ({ params: { slug } }) => {
 
   return (
     <>
+      <script
+        defer
+        type="text/javascript"
+        src="//pl19914728.highrevenuegate.com/2c/bc/70/2cbc706cbef010f42b51048f9b8ec0ef.js"
+      ></script>
       <title>{post.title}</title>
       <meta name="description" content={`${post.description}`} />
       <meta

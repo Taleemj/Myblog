@@ -8,9 +8,19 @@
     left: 0;
     border: 0.2px solid #fff;
   }
-  .ads {
+  .ads,
+  .ads1 {
     width: 15%;
-    padding: 20px 10px;
+    padding: 20px 5px;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .ads {
+    position: fixed;
+    right: 0;
+    top: 0;
   }
   display: flex;
   border-bottom: 1px solid #000;
@@ -117,17 +127,25 @@
 
 @media (max-width: 600px) {
   .main {
+    flex-direction: column;
     .progress {
       height: 8px;
     }
-    .ads {
+    .ads1 {
       display: none;
+    }
+    .ads {
+      width: 100%;
+      margin-top: 0;
+      position: relative;
     }
   }
   .container {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
+    padding-bottom: 40px;
     .blog {
       margin: 0 auto;
       border: 1px solid #000;

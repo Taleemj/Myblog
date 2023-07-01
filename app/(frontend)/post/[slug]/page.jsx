@@ -57,7 +57,7 @@ const Post = async ({ params: { slug } }) => {
   return (
     <div className={styles.main}>
       <ScrollBar styles={styles} />
-      <div className={styles.ads}>
+      <div className={styles.ads1}>
         {/* <amp-ad
           width="100vw"
           height="320"
@@ -69,16 +69,6 @@ const Post = async ({ params: { slug } }) => {
         >
           <div overflow=""></div>
         </amp-ad> */}
-        <script
-          defer
-          src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"
-        ></script>
-        <script
-          async="async"
-          data-cfasync="false"
-          src="//pl19914491.highrevenuegate.com/db5a30a7a3e08b7d754cc80feee53da7/invoke.js"
-        ></script>
-        <div id="container-db5a30a7a3e08b7d754cc80feee53da7"></div>
       </div>
       <main className={styles.container}>
         <div className={styles.blog}>
@@ -102,7 +92,7 @@ const Post = async ({ params: { slug } }) => {
 
           <article>
             <PortableText value={post.body} components={RichText} />
-            <amp-ad
+            {/* <amp-ad
               width="100vw"
               height="320"
               type="adsense"
@@ -112,7 +102,7 @@ const Post = async ({ params: { slug } }) => {
               data-full-width=""
             >
               <div overflow=""></div>
-            </amp-ad>
+            </amp-ad> */}
             <script
               async="async"
               data-cfasync="false"
@@ -122,7 +112,7 @@ const Post = async ({ params: { slug } }) => {
           </article>
         </div>
         <Comments postId={post._id} comments={comments} />
-        <amp-ad
+        {/* <amp-ad
           width="100vw"
           height="320"
           type="adsense"
@@ -132,7 +122,7 @@ const Post = async ({ params: { slug } }) => {
           data-full-width=""
         >
           <div overflow=""></div>
-        </amp-ad>
+        </amp-ad> */}
         <div className={styles.relatedposts}>
           <h1>Latest Posts</h1>
           <div className={styles.postscontainer}>

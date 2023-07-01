@@ -7,6 +7,11 @@ const head = () => {
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
+      <script
+        defer
+        type="text/javascript"
+        src="//pl19914728.highrevenuegate.com/2c/bc/70/2cbc706cbef010f42b51048f9b8ec0ef.js"
+      ></script>
       <Script
         async
         id="google-analytics"
