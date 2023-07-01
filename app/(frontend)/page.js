@@ -34,6 +34,7 @@ const Page = async () => {
       ></script>
       <div id="container-db5a30a7a3e08b7d754cc80feee53da7"></div>
       <Main posts={posts} />
+      <div id="container-db5a30a7a3e08b7d754cc80feee53da7"></div>
     </div>
   );
 };

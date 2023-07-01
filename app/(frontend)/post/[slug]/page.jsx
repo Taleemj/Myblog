@@ -73,6 +73,12 @@ const Post = async ({ params: { slug } }) => {
           defer
           src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"
         ></script>
+        <script
+          async="async"
+          data-cfasync="false"
+          src="//pl19914491.highrevenuegate.com/db5a30a7a3e08b7d754cc80feee53da7/invoke.js"
+        ></script>
+        <div id="container-db5a30a7a3e08b7d754cc80feee53da7"></div>
       </div>
       <main className={styles.container}>
         <div className={styles.blog}>
@@ -107,6 +113,7 @@ const Post = async ({ params: { slug } }) => {
             >
               <div overflow=""></div>
             </amp-ad>
+            <div id="container-db5a30a7a3e08b7d754cc80feee53da7"></div>
           </article>
         </div>
         <Comments postId={post._id} comments={comments} />
@@ -148,6 +155,7 @@ const Post = async ({ params: { slug } }) => {
           defer
           src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"
         ></script>
+        <div id="container-db5a30a7a3e08b7d754cc80feee53da7"></div>
       </div>
     </div>
   );
