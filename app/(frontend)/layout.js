@@ -10,6 +10,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        {/* <script
+          defer
+          type="text/javascript"
+          src="//pl19915133.highrevenuegate.com/e9/ea/7a/e9ea7a47ee32f5b4f3a610cdcab223e8.js"
+        ></script> */}
         <Analytics />
         <Header />
         {children}
