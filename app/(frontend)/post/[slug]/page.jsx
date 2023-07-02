@@ -11,23 +11,23 @@ import RelatedPosts from "../../../../components/RelatedPosts/RelatedPosts";
 import Comments from "@/components/comments/Comments";
 import ScrollBar from "@/components/ScrollBar";
 
-export const revalidate = 30;
+// export const revalidate = 30;
 
-export async function generateStaticParams() {
-  const query = groq`
-        *[_type == "post"]
-    {
-        slug
-    }
-    `;
-  const slugs = await client.fetch(query);
+// export async function generateStaticParams() {
+//   const query = groq`
+//         *[_type == "post"]
+//     {
+//         slug
+//     }
+//     `;
+//   const slugs = await client.fetch(query);
 
-  const slugRoutes = slugs.map((slug) => slug.slug.current);
+//   const slugRoutes = slugs.map((slug) => slug.slug.current);
 
-  return slugRoutes.map((slug) => ({
-    slug,
-  }));
-}
+//   return slugRoutes.map((slug) => ({
+//     slug,
+//   }));
+// }
 
 const Post = async ({ params: { slug } }) => {
   const query = groq`
@@ -90,15 +90,21 @@ const Post = async ({ params: { slug } }) => {
             })}
           </p>
           <h1>{post.title}</h1>
-          <div className={styles.imagebox}>
-            <Image
-              src={urlFor(post.mainImage).url()}
-              className={styles.bgimg}
-              width={1000}
-              height={400}
-              alt="image"
-            />
-          </div>
+          <a
+            href="https://www.highrevenuegate.com/pvruix6d7?key=b91887cc749eaeef938cbef22ffd7655"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className={styles.imagebox}>
+              <Image
+                src={urlFor(post.mainImage).url()}
+                className={styles.bgimg}
+                width={1000}
+                height={400}
+                alt="image"
+              />
+            </div>
+          </a>
 
           <article>
             <PortableText value={post.body} components={RichText} />
@@ -113,6 +119,18 @@ const Post = async ({ params: { slug } }) => {
             >
               <div overflow=""></div>
             </amp-ad> */}
+            <p>
+              Click{" "}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.highrevenuegate.com/pvruix6d7?key=b91887cc749eaeef938cbef22ffd7655"
+              >
+                Here
+              </a>{" "}
+              for a surpries?
+            </p>
+            <p>Found this article useful? leave a comment down below.</p>
             <script
               async="async"
               data-cfasync="false"
