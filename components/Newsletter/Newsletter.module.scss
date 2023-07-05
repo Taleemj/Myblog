@@ -2,83 +2,84 @@
   margin: 100px 0 10px;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  padding: 0 50px;
+  padding: 100px 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  // .txt {
-  //   h1 {
-  //     font-size: 2.5rem;
-  //     font-weight: 400;
-  //   }
-  // }
+  .txt {
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 400;
+    }
+  }
   iframe {
     height: 350px;
     width: 100%;
     padding: 0;
   }
-  // form {
-  //   width: 40%;
-  //   input {
-  //     width: 70%;
-  //     height: 50px;
-  //     border-bottom: 1px solid #000;
-  //     outline: none;
-  //     border-top: none;
-  //     border-left: none;
-  //     border-right: none;
-  //     //   padding: 10px 0;
-  //     font-size: 14px;
-  //     margin-right: 5px;
-  //     &::placeholder {
-  //       font-size: 16px;
-  //     }
-  //     &:hover {
-  //       border-bottom: 2px solid blue;
-  //     }
-  //     &:focus {
-  //       border-bottom: 2px solid blue;
-  //     }
-  //   }
-  //   button {
-  //     width: 28%;
-  //     height: 50px;
-  //     background-color: #000;
-  //     outline: none;
-  //     border: 2px solid #000;
-  //     color: #fff;
-  //     &:hover {
-  //       transition: all 0.3s;
-  //       cursor: pointer;
-  //       background-color: #fff;
-  //       color: #000;
-  //     }
-  //   }
-  // }
+  form {
+    width: 40%;
+    input {
+      width: 70%;
+      height: 50px;
+      border-bottom: 1px solid #000;
+      outline: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      //   padding: 10px 0;
+      font-size: 14px;
+      margin-right: 5px;
+      &::placeholder {
+        font-size: 16px;
+      }
+      &:hover {
+        border-bottom: 2px solid blue;
+      }
+      &:focus {
+        border-bottom: 2px solid blue;
+      }
+    }
+    button {
+      width: 28%;
+      height: 50px;
+      background-color: #000;
+      outline: none;
+      border: 2px solid #000;
+      color: #fff;
+      &:hover {
+        transition: all 0.3s;
+        cursor: pointer;
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
 }
 
 @media (max-width: 600px) {
   .container {
     flex-direction: column;
-    padding: 0;
-    iframe {
-      height: 500px;
+    padding: 40px 8px;
+    // padding: 0;
+    // iframe {
+    //   height: 500px;
+    // }
+    .txt {
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
     }
-    // .txt {
-    //   h1 {
-    //     font-size: 1.8rem;
-    //     margin-bottom: 20px;
-    //   }
-    // }
-    // form {
-    //   width: 100%;
-    //   margin-top: 20px;
-    //   input {
-    //     width: 60%;
-    //   }
-    //   button {
-    //     width: 38%;
-    //   }
-    // }
+    form {
+      width: 100%;
+      margin-top: 20px;
+      input {
+        width: 60%;
+      }
+      button {
+        width: 38%;
+      }
+    }
   }
 }

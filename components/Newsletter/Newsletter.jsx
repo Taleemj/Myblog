@@ -4,7 +4,7 @@ import Script from "next/script";
 const Newsletter = () => {
   return (
     <div className={styles.container}>
-      {/* <div className={styles.txt}>
+      <div className={styles.txt}>
         <h1>Never Miss a New Post.</h1>
       </div>
       <form action="">
@@ -16,21 +16,7 @@ const Newsletter = () => {
           required
         />
         <button type="submit">Subscribe</button>
-      </form> */}
-      <iframe
-        data-w-type="embedded"
-        frameBorder="0"
-        scrolling="no"
-        marginHeight="0"
-        marginWidth="0"
-        src="https://0ysz6.mjt.lu/wgt/0ysz6/hh0/form?c=a303c1e0"
-        width="100%"
-      ></iframe>
-
-      <Script
-        type="text/javascript"
-        src="https://app.mailjet.com/pas-nc-embedded-v1.js"
-      />
+      </form>
     </div>
   );
 };
