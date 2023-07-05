@@ -120,23 +120,22 @@ const Post = async ({ params: { slug } }) => {
               <div overflow=""></div>
             </amp-ad> */}
             <p>
-              Click{" "}
+              Ad link{" "}
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.highrevenuegate.com/pvruix6d7?key=b91887cc749eaeef938cbef22ffd7655"
               >
-                Here
-              </a>{" "}
-              for a surpries?
+                Here.
+              </a>
             </p>
-            <p>Found this article useful? leave a comment down below.</p>
             <script
               async="async"
               data-cfasync="false"
               src="//pl19914491.highrevenuegate.com/db5a30a7a3e08b7d754cc80feee53da7/invoke.js"
             ></script>
             <div id="container-db5a30a7a3e08b7d754cc80feee53da7"></div>
+            <p>Found this article helpful? leave a comment down below.</p>
           </article>
         </div>
         <Comments postId={post._id} comments={comments} />
