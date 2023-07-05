@@ -24,58 +24,54 @@
     }
   }
   .newsletter {
-    // padding: 10px 0;
-    // border: 1px solid #000;
+    padding: 10px 0;
     width: 100%;
-    iframe {
-      width: 100%;
-      height: 300px;
+    margin-left: 50px;
+    margin-top: 10%;
+    h4 {
+      margin-bottom: 15px;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+      opacity: 0.9;
     }
-    // h4 {
-    //   margin-bottom: 15px;
-    //   font-size: 18px;
-    //   font-weight: 500;
-    //   letter-spacing: 0.1rem;
-    //   opacity: 0.9;
-    // }
     p {
       font-size: 13px;
       margin-bottom: 10px;
       display: flex;
       align-items: center;
     }
-    // input {
-    //   width: 450px;
-    //   height: 50px;
-    //   padding: 0 20px;
-    //   display: inline-block;
-    //   outline: none;
-    //   &:hover {
-    //     outline: 1px solid #000;
-    //   }
-    //   &:focus {
-    //     outline: 1px solid #000;
-    //   }
-    // }
-    // button {
-    //   width: 150px;
-    //   height: 50px;
-    //   background-color: #000;
-    //   color: #fff;
-    //   outline: none;
-    //   border: 2px solid #000;
+    input {
+      width: 450px;
+      height: 50px;
+      padding: 0 20px;
+      display: inline-block;
+      outline: none;
+      &:hover {
+        outline: 1px solid #000;
+      }
+      &:focus {
+        outline: 1px solid #000;
+      }
+    }
+    button {
+      width: 150px;
+      height: 50px;
+      background-color: #000;
+      color: #fff;
+      outline: none;
+      border: 2px solid #000;
 
-    //   display: inline-block;
-    //   &:hover {
-    //     transition: all 0.3s;
-    //     cursor: pointer;
-    //     background-color: #fff;
-    //     color: #000;
-    //   }
-    // }
+      display: inline-block;
+      &:hover {
+        transition: all 0.3s;
+        cursor: pointer;
+        background-color: #fff;
+        color: #000;
+      }
+    }
     .copy {
-      margin-top: 5rem;
-      margin-left: 1.5rem;
+      margin-top: 8rem;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -124,19 +120,19 @@
     }
     .newsletter {
       width: 100%;
-
-      // h4 {
-      //   margin-bottom: 15px;
-      //   font-size: 16px;
-      // }
-      // input {
-      //   width: 70%;
-      //   height: 50px;
-      // }
-      // button {
-      //   width: 30%;
-      //   height: 50px;
-      // }
+      margin-left: 2px;
+      h4 {
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+      input {
+        width: 70%;
+        height: 50px;
+      }
+      button {
+        width: 30%;
+        height: 50px;
+      }
       .copy {
         margin-top: 2rem;
         margin-left: 0;

@@ -50,21 +50,18 @@ const Footer = () => {
         </div>
       </ul>
       <div className={styles.newsletter}>
-        <iframe
-          data-w-type="embedded"
-          frameBorder="0"
-          scrolling="no"
-          marginHeight="0"
-          marginWidth="0"
-          src="https://0ysz6.mjt.lu/wgt/0ysz6/hh1/form?c=84d47493"
-          width="100%"
-        ></iframe>
-
-        <Script
-          type="text/javascript"
-          src=" https://app.mailjet.com/pas-nc-embedded-v1.js"
-        />
-
+        <h4>Never miss a post</h4>
+        <p>Enter email here</p>
+        <form action="">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Adress"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
         <p className={styles.copy}>
           <span className={styles.copy2}>
             2023 made with
