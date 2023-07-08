@@ -11,9 +11,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Script
+          async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
         />
-        <Script id="google-analytics">
+        <Script async id="google-analytics">
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
