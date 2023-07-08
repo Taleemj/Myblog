@@ -1,8 +1,7 @@
-import Script from "next/script";
 const head = () => {
   return (
     <>
-      <Script
+      {/* <Script
         async
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -21,7 +20,7 @@ const head = () => {
           });
         `,
         }}
-      />
+      /> */}
       <title>The developer Blog</title>
       <meta
         name="description"
