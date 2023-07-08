@@ -16,7 +16,7 @@ export const RichText = {
         <Image
           src={urlFor(value).url()}
           alt="image"
-          width={5000}
+          width={1000}
           height={500}
         />
       </div>
