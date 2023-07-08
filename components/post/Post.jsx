@@ -12,7 +12,7 @@ const Post = ({ post }) => {
           <Image
             src={urlFor(post.mainImage).url()}
             width={1000}
-            height={300}
+            height={1000}
             alt={post.author.name}
           />
         </div>
