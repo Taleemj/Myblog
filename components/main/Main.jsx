@@ -1,8 +1,9 @@
 import styles from "./Main.module.scss";
 import Image from "next/image";
-import image from "../../assets/img2.jpg";
 import Link from "next/link";
-import urlFor, { UrlFor } from "../../lib/urlFor";
+import urlFor from "../../lib/urlFor";
+import { PortableText } from "@portabletext/react";
+import { RichText } from "../Richtext/RichText";
 
 const Main = ({ posts }) => {
   return (
@@ -44,15 +45,16 @@ const Main = ({ posts }) => {
       </div>
       <div className={styles.aboutme}>
         <h1>about me</h1>
-        <Image src={image} alt="thats me" />
-        <p>
-          My name is Taleem Mankuer, the creator of the developer blog an
-          aspiring developer and student specialing in frontend web development.
-          I work with React and Next js and enjoy finding creative solutions to
-          problems related to web development and spend my time experimenting
-          with technologies and inhale a wide variety of potentially useful
-          information through different platforms.
-        </p>
+        <Image
+          src={urlFor(posts[posts.length - 1].author.image).url()}
+          width={1000}
+          height={500}
+          alt="me"
+        />
+        <PortableText
+          value={posts[posts.length - 1].author.bio[0]}
+          components={RichText}
+        />
         <Link href={`/aboutMe`}>
           <h4>Read More &rarr; </h4>
         </Link>
