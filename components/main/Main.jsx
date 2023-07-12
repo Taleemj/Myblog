@@ -20,7 +20,7 @@ const Main = ({ posts }) => {
                   src={urlFor(post.mainImage).url()}
                   width={1000}
                   height={400}
-                  alt="thats me"
+                  alt="image"
                 />
                 <Link href={`/post/${post.slug.current}`}>
                   <div className={styles.text}>
