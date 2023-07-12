@@ -1,9 +1,7 @@
-import Link from "next/link";
 import Image from "next/image";
 import { groq } from "next-sanity";
 import { client } from "../../../../lib/sanity.client";
 import styles from "./Postpage.module.scss";
-import { ClipboardIcon, ArrowLongRightIcon } from "@heroicons/react/24/solid";
 import urlFor from "../../../../lib/urlFor";
 import { PortableText } from "@portabletext/react";
 import { RichText } from "../../../../components/Richtext/RichText";
