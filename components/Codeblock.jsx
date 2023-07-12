@@ -10,14 +10,11 @@ const Codeblock = ({ code, lang, styles }) => {
   }, []);
   return (
     <pre className={`language-${lang} ${styles.code}`}>
-      <div className={styles.Codeblock}>
+      <code className={`language-${lang} ${styles.Codeblock}`}>
         {parse(`${Prism.highlight(code, Prism.languages[lang], lang)}`)}
-      </div>
+      </code>
       <CopyText text={code} />
     </pre>
-    // <pre className="langauge-css">
-    //   <code className="langauge-jsx">{code}</code>
-    // </pre>
   );
 };
 
