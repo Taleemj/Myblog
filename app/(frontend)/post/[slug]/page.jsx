@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { groq } from "next-sanity";
-import { client } from "../../../../lib/sanity.client";
+import { client } from "@/lib/sanity.client";
 import styles from "./Postpage.module.scss";
-import urlFor from "../../../../lib/urlFor";
+import urlFor from "@/lib/urlFor";
 import { PortableText } from "@portabletext/react";
-import { RichText } from "../../../../components/Richtext/RichText";
-import RelatedPosts from "../../../../components/RelatedPosts/RelatedPosts";
+import { RichText } from "@/components/Richtext/RichText";
+import RelatedPosts from "@/components/RelatedPosts/RelatedPosts";
 import Comments from "@/components/comments/Comments";
 import ScrollBar from "@/components/ScrollBar";
 
@@ -26,6 +26,17 @@ export const revalidate = 60;
 //     slug,
 //   }));
 // }
+
+export async function generateMetadata({ params: { slug } }) {
+  const query = groq`
+  *[_type == "post" && slug.current == $slug][0]
+  `;
+  const post = await client.fetch(query, { slug });
+  return {
+    title: post.title,
+    description: post.description,
+  };
+}
 
 const Post = async ({ params: { slug } }) => {
   const query = groq`
@@ -56,17 +67,6 @@ const Post = async ({ params: { slug } }) => {
     <div className={styles.main}>
       <ScrollBar styles={styles} />
       <div className={styles.ads1}>
-        {/* <amp-ad
-          width="100vw"
-          height="320"
-          type="adsense"
-          data-ad-client="ca-pub-8299193659017860"
-          data-ad-slot="5863084931"
-          data-auto-format="rspv"
-          data-full-width=""
-        >
-          <div overflow=""></div>
-        </amp-ad> */}
         {/* <script
           async="async"
           data-cfasync="false"
@@ -106,17 +106,6 @@ const Post = async ({ params: { slug } }) => {
 
           <article>
             <PortableText value={post.body} components={RichText} />
-            {/* <amp-ad
-              width="100vw"
-              height="320"
-              type="adsense"
-              data-ad-client="ca-pub-8299193659017860"
-              data-ad-slot="6865746235"
-              data-auto-format="rspv"
-              data-full-width=""
-            >
-              <div overflow=""></div>
-            </amp-ad> */}
             <p>
               Ad link{" "}
               <a
@@ -137,17 +126,6 @@ const Post = async ({ params: { slug } }) => {
           </article>
         </div>
         <Comments postId={post._id} comments={comments} />
-        {/* <amp-ad
-          width="100vw"
-          height="320"
-          type="adsense"
-          data-ad-client="ca-pub-8299193659017860"
-          data-ad-slot="6865746235"
-          data-auto-format="rspv"
-          data-full-width=""
-        >
-          <div overflow=""></div>
-        </amp-ad> */}
         <div className={styles.relatedposts}>
           <h1>Latest Posts</h1>
           <div className={styles.postscontainer}>
@@ -160,17 +138,6 @@ const Post = async ({ params: { slug } }) => {
         </div>
       </main>
       <div className={styles.ads}>
-        {/* <amp-ad
-          width="100vw"
-          height="320"
-          type="adsense"
-          data-ad-client="ca-pub-8299193659017860"
-          data-ad-slot="5863084931"
-          data-auto-format="rspv"
-          data-full-width=""
-        >
-          <div overflow=""></div>
-        </amp-ad> */}
         <script
           defer
           src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"
