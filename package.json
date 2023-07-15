@@ -28,7 +28,7 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.44.3",
     "react-icons": "^4.8.0",
-    "sanity": "^3.0.0",
+    "sanity": "^3.14.2",
     "sharp": "^0.32.0",
     "styled-components": "^5.2.0"
   },
