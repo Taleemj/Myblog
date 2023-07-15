@@ -7,6 +7,8 @@ import { client } from "../../../lib/sanity.client";
 import { PortableText } from "@portabletext/react";
 import { RichText } from "@/components/Richtext/RichText";
 
+export const revalidate = 60;
+
 const page = async () => {
   const query = groq`
   *[_type == "author"][0]
