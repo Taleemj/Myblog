@@ -21,7 +21,7 @@
     "eslint-config-next": "13.2.4",
     "glob": "^10.2.2",
     "html-react-parser": "^4.0.0",
-    "next": "13.2.4",
+    "next": "^13.4.10",
     "next-sanity": "^4.1.6",
     "prismjs": "^1.29.0",
     "react": "18.2.0",
