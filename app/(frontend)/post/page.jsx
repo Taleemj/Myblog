@@ -9,7 +9,7 @@ const query = groq`
   author->,
   categories[]->
 } | order(_createdAt desc)`;
-export const revalidate = 30;
+export const revalidate = 60;
 const page = async () => {
   const posts = await client.fetch(query);
 
