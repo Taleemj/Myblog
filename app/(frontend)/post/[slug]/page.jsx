@@ -103,7 +103,17 @@ const Post = async ({ params: { slug } }) => {
               />
             </div>
           </a>
-
+          <script defer type="text/javascript">
+            {`atOptions = {
+		'key' : '446cfc4ff35e39c76e4a08df1d3e63ca',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/446cfc4ff35e39c76e4a08df1d3e63ca/invoke.js"></scr' + 'ipt>');
+  `}
+          </script>
           <article>
             <PortableText value={post.body} components={RichText} />
             <p>
@@ -142,12 +152,16 @@ const Post = async ({ params: { slug } }) => {
           defer
           src="//servedby.studads.com/ads/ads.php?t=MTg5NTg7MTI3MDE7dmVydGljYWwuc2t5c2NyYXBlcg==&index=1"
         ></script>
-        {/* <script
-          async="async"
-          data-cfasync="false"
-          src="//pl19914491.highrevenuegate.com/db5a30a7a3e08b7d754cc80feee53da7/invoke.js"
-        ></script>
-        <div id="container-db5a30a7a3e08b7d754cc80feee53da7"></div> */}
+        <script type="text/javascript">
+          {`atOptions = {
+		'key' : 'c59ad6f85d9c720a208c3118256e8e86',
+		'format' : 'iframe',
+		'height' : 600,
+		'width' : 160,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/c59ad6f85d9c720a208c3118256e8e86/invoke.js"></scr' + 'ipt>');`}
+        </script>
       </div>
     </div>
   );
