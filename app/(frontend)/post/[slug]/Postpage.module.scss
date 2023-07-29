@@ -11,7 +11,7 @@
   .ads,
   .ads1 {
     width: 15%;
-    padding: 20px 5px;
+    padding: 15px 5px;
     margin-top: 130px;
     display: flex;
     flex-direction: column;
@@ -73,6 +73,12 @@
           :hover {
             text-decoration-color: #000;
           }
+        }
+      }
+      ul {
+        li {
+          font-size: 18px;
+          line-height: 1.4;
         }
       }
     }

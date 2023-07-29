@@ -103,27 +103,34 @@ const Post = async ({ params: { slug } }) => {
               />
             </div>
           </a>
-          <script defer type="text/javascript">
-            {`atOptions = {
-		'key' : '446cfc4ff35e39c76e4a08df1d3e63ca',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/446cfc4ff35e39c76e4a08df1d3e63ca/invoke.js"></scr' + 'ipt>');
-  `}
+          <script type="text/javascript">
+            {
+              ((tOptions = {
+                key: "446cfc4ff35e39c76e4a08df1d3e63ca",
+                format: "iframe",
+                height: 90,
+                width: 728,
+                params: {},
+              }),
+              document.write(
+                "<scr" +
+                  'ipt type="text/javascript" src="http' +
+                  (location.protocol === "https:" ? "s" : "") +
+                  '://www.profitabledisplaynetwork.com/446cfc4ff35e39c76e4a08df1d3e63ca/invoke.js"></scr' +
+                  "ipt>"
+              ))
+            }
           </script>
           <article>
             <PortableText value={post.body} components={RichText} />
             <p>
-              Ad link{" "}
+              {" "}
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.highrevenuegate.com/pvruix6d7?key=b91887cc749eaeef938cbef22ffd7655"
               >
-                Here.
+                Ad
               </a>
             </p>
             <script
