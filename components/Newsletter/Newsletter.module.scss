@@ -12,10 +12,13 @@
       font-weight: 400;
     }
   }
-  iframe {
-    height: 350px;
-    width: 100%;
-    padding: 0;
+  .submitted {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 5rem;
+    }
   }
   form {
     width: 40%;
@@ -61,10 +64,12 @@
   .container {
     flex-direction: column;
     padding: 40px 8px;
-    // padding: 0;
-    // iframe {
-    //   height: 500px;
-    // }
+    .submitted {
+      flex-direction: column;
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
     .txt {
       h1 {
         font-size: 1.8rem;

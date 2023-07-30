@@ -4,6 +4,14 @@
   height: 70vh;
   margin: 20px auto 0;
   align-items: center;
+  .submitted {
+    display: flex;
+    align-items: center;
+    margin-left: -15px;
+    svg {
+      width: 5rem;
+    }
+  }
   .links {
     width: 30%;
     list-style: none;
@@ -116,6 +124,19 @@
           font-size: 25px;
           margin-right: 4px;
         }
+      }
+    }
+    .submitted {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      margin-left: 0;
+      svg {
+        margin-bottom: 5px;
+        margin-left: -10px;
+      }
+      h1 {
+        font-size: 1.8rem;
       }
     }
     .newsletter {
