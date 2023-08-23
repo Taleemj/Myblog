@@ -12,14 +12,19 @@ export const RichText = {
       <Codeblock styles={styles} code={value.code} lang={value.language} />
     ),
     image: ({ value }) => (
-      <div className={styles.imagebox}>
+      <Link
+        href={`${urlFor(value).url()}`}
+        target="_blank"
+        rel="noreferrer"
+        className={styles.imagebox}
+      >
         <Image
           src={urlFor(value).url()}
           alt="image"
           width={1000}
           height={500}
         />
-      </div>
+      </Link>
     ),
   },
   list: {
